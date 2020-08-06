@@ -1,0 +1,44 @@
+body{
+    font-family: , sans-serif;
+}
+
+.services{
+    padding: 3%;
+}
+
+button{
+    border-color: transparent;
+    
+}
+
+button:hover{
+    color: ;
+    background-color: #8EE6B8;
+}
+
+a{
+    color: #8EE6B8;
+}
+
+a:hover{
+    text-decoration: none;
+/*    color: #8EE6B8;*/
+}
+
+#intro{
+    padding: 3%;
+}
+
+#services{
+    background-image: linear-gradient(to right, #fff , #8EE6B8);
+    padding: 2%;
+}
+
+#schedule{
+    padding: 2%;
+    text-align: center;
+}
+
+#about{
+    padding: 2%;
+}
