@@ -9,6 +9,50 @@
     background-image: linear-gradient(120deg,#335145,#B1DECA);
     color: white;
     min-height: 100vh;
+    padding: 5%;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    margin: 0.5rem;
+    background: #fff;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.todo-item{
+    padding: 0.4rem;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
 }
 
 header,form{
@@ -20,9 +64,33 @@ header,form{
     text-align: center;
 }
 
-form input, form button{
+form input, form button, .todo-list button{
     padding: 0.5rem;
-    font-size: 1rem;
-    border-radius: 3rem;
+    font-size: 1.5rem;
+    border: none;
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.2));
+}
+
+form input{
+    border-radius: 3rem 0rem 0rem 3rem;
+}
+
+form button, .todo-list button{
+    color: #335145;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button{
+    border-radius: 0rem 3rem 3rem 0rem;
+}
+
+form button:hover, .todo-list button:hover{ 
+    background: #335145;
+    color: #fff;
+}
+
+select{
     
 }
