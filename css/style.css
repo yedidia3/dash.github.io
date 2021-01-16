@@ -92,5 +92,39 @@ form button:hover, .todo-list button:hover{
 }
 
 select{
-    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select{
+    color: #335145;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background: #B1DECA;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after{
+    background: #fff;
+    color: #B1DECA;
 }
