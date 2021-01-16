@@ -10,8 +10,28 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     
-    <title>Groceries</title>
+    <title>To Do</title>
     
+      <!--    MENU
+========================-->  
+<div>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+   <a href="todo.html">TO DO</a>
+    <a href="language.html">LANGUAGE</a>
+    <a href="groceries.html">GROCERIES</a>
+    <a href="dashboard.html">DASHBOARD</a>
+  <p class="whiteText">YEDIDIA 2021</p>
+</div>
+</div>
+
+<span class="menu" style="font-size:40px; cursor:pointer;" onclick="openNav()"><i class="fas fa-caret-down"></i></span>
+
+    </div>
+    
+    <!--    MENU
+========================--> 
     
 </head>
 <body class="todoList">
@@ -25,16 +45,20 @@
         <button class="todo-button" type="submit">
             <i class="fas fa-plus"></i>
         </button>
+        
+        <div class="select">
+            <select name="todos" class="filter-todo" id="">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="unfinished">Unfinished</option>
+            </select>
+        </div>
+        
     </form>
     
     <div class="todo-container">
         <ul class="todo-list">
-<!--
-            <div class="todo">
-                <li></li>
-                <button></button>
-            </div>
--->
+<!--            javascript-->
         </ul>
     </div>
     

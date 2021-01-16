@@ -24,6 +24,10 @@ function addTodo(event){
     newTodo.classList.add("todo-item");
     todoDiv.appendChild(newTodo);
     
+    //add todo to local storage
+    saveLocalTodos(todoInput.value);
+    
+    
     //completed button
     const completedButton = document.createElement("button");
     completedButton.innerHTML = '<i class="fas fa-check"></i>';
@@ -72,7 +76,7 @@ function deleteCheck(e){
 function filterTodo(e){
     const todos = todoList.childNodes;
     todos.forEach(function(todo) {
-       switch(e.target.value) {
+       switch (e.target.value) {
            case "all":
                todo.style.display = "flex";
                break;
@@ -82,14 +86,29 @@ function filterTodo(e){
                } else {
                    todo.style.display = "none";
                }
+               break;
             case "unfinished":
-               if(todo.classList.contains('unfinished')){
+               if(!todo.classList.contains('completed')){
                    todo.style.display = "flex";
                } else {
                    todo.style.display = "none";
                }
+               break;
        }
     });
+}
+
+//local storage to save the list
+function saveLocalTodos(todo){
+    //check if I already have todos 
+    let todos;
+    if(localStorage.getItem("todos") === null){
+        todos = [];
+    } else {
+        todos = JSON.parse(localStorage.getItem("todos"));
+    }
     
-    
+    //grab todos and push them into the to do list array
+    todos.push(todo);
+    localStorage.setItem("todos", JSON.stringify(todos));
 }
