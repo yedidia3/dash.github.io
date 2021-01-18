@@ -3,14 +3,14 @@
     box-sizing: border-box;
 }
 
-/*TODO LIST*/
-
 .todoList{
     background-image: linear-gradient(120deg,#335145,#B1DECA);
     color: white;
     min-height: 100vh;
     padding: 5%;
 }
+
+/*TODO LIST*/
 
 .todo-container{
     display: flex;

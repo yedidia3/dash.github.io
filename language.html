@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/language.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     
     <title>Language Practice</title>
+    
+     <!--    MENU
+========================-->  
+<div>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+   <a href="todo.html">TO DO</a>
+    <a href="language.html">LANGUAGE</a>
+    <a href="groceries.html">GROCERIES</a>
+    <a href="index.html">DASHBOARD</a>
+  <p class="whiteText">YEDIDIA 2021</p>
+</div>
+</div>
+
+<span class="menu" style="font-size:40px; cursor:pointer;" onclick="openNav()"><i class="fas fa-caret-down"></i></span>
+
+    </div>
+    
+    <!--    MENU
+========================--> 
+    
 </head>
 <body>
   
@@ -15,6 +38,7 @@
         <button class="french">French</button>
         <button class="lingala">Lingala</button>
         <button class="japanese">Japanese</button>
+        <button class="japanese">Portuguese</button>
     </div>
     
 <section id="vocab"> 
@@ -1007,6 +1031,7 @@
     
     
     <script src="js/keyboard.js"></script>
+    <script src="js/menu.js"></script>
     <script src="js/language.js"></script>
     <!-- JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

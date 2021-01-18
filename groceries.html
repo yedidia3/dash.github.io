@@ -6,42 +6,78 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
    
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/recipes.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     
     <title>Groceries</title>
+     <!--    MENU
+========================-->  
+<div>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+   <a href="todo.html">TO DO</a>
+    <a href="language.html">LANGUAGE</a>
+    <a href="groceries.html">GROCERIES</a>
+    <a href="index.html">DASHBOARD</a>
+  <p class="whiteText">YEDIDIA 2021</p>
+</div>
+</div>
+
+<span class="menu" style="font-size:40px; cursor:pointer;" onclick="openNav()"><i class="fas fa-caret-down"></i></span>
+
+    </div>
     
+    <!--    MENU
+========================--> 
     
 </head>
-<body class="todoList">
+<body class="recipePage">
     
     <header>
-        <h1>Yedidia's To Dos</h1>
+        <h1>Grocery List Generator</h1>
     </header>
+   
+    <div class="top">
+    <div class="selector-container">
+        <div class="threeMeal">
+            <h3>3-Part Meal Ideas</h3>
+                <div class="row">
+                    <div class="col">
+                        <button class="entree">Entree</button>
+                        <button class="lock"><i class="fas fa-lock"></i></button>
+                        <button class="redo"><i class="fas fa-redo-alt"></i></button>
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col">
+                        <button class="side">Side</button>
+                        <button class="lock"><i class="fas fa-lock"></i></button>
+                        <button class="redo"><i class="fas fa-redo-alt"></i></button>
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col">
+                        <button class="dessert">Dessert</button>
+                        <button class="lock"><i class="fas fa-lock"></i></button>
+                        <button class="redo"><i class="fas fa-redo-alt"></i></button>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="recipe-container">
+        <ul class="recipe-directions"></ul>
+    </div>
+    </div> 
     
-    <form action="">
-        <input type="text" class="todo-input">
-        <button class="todo-button" type="submit">
-            <i class="fas fa-plus"></i>
-        </button>
-    </form>
-    
-    <div class="todo-container">
-        <ul class="todo-list">
-<!--
-            <div class="todo">
-                <li></li>
-                <button></button>
-            </div>
--->
-        </ul>
+    <div class="grocery-container">
+        <ul class="grocery-list"></ul>
     </div>
     
     
-    
-    
-    
+
     
     <script src="js/menu.js"></script>
     <script src="js/main.js"></script>
