@@ -55,7 +55,11 @@ function randomSide(side){
     //show recipe directions
     var recipeDirectionsSide = document.querySelector(".recipe-directions-side");
     
+    
+    
     //show ingredients in grocery list on click
+    
+    
 };
 
 randomSide(side);
