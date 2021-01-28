@@ -114,6 +114,14 @@ function addToGroceryList(){
 }
 
 
+//GROCERY LIST
+    //push items into list
+
+    //allow for item removal
+
+    //allow the items to be sent to notes/email/messages or something to generate the list
+
+
 //RECIPES
 
 

@@ -25,7 +25,7 @@
 }
 
 .recipe-directions-main, .recipe-directions-side, .recipe-directions-sweet{
-    list-style: none;
+    list-style: disc;
 }
 
 .recipe{
