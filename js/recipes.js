@@ -58,7 +58,7 @@ function randomSide(side){
     
     
     //show ingredients in grocery list on click
-    
+        //maybe I need to push items into an array that places each item as a li
     
 };
 
