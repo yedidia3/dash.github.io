@@ -99,7 +99,18 @@
     padding: 0.4rem;
 }
 
+.recipe-cards{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+
 .recipe-cards img{
     height: auto;
-    width: 200px;
+    width: 250px;
+    padding: 10px;
+}
+
+.card {
+    color: black;
 }
