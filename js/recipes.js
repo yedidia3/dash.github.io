@@ -1,16 +1,18 @@
 //DISHES
-let main = ["Spicy Salmon Onigiri", "Shakshuka", "Pondu, Rice, and Pili Pili", "TLT", "Vegan American Breakfast", "Gnocchi in Red Sauce", "Japanese Style Macro Bowl", "Teriyaki Bao", "Mediterranean Style Salad", "Kale Salad", "Ginger Tofu", "Curry Salad", "Tacos", "Tex Mex Bowl", "Fried Rice", "Veggie Stir Fry", "Vegan Ramen", "2 Sushi Rolls", "Avocado Toast and Eqqs", "Orange Tofu, Cucumber and Edamame", "Guac, Eqqs, Salsa and Chips", "Black Bean Burger", "Plant Meat Burger"];
+let main = ["Spicy Salmon Onigiri", "Shakshuka", "Pondu and Rice", "TLT", "Vegan American Breakfast", "Gnocchi", "Japanese Style Macro Bowl", "Teriyaki Bao", "Mediterranean Style Salad", "Kale Salad", "Curry Salad", "Tacos", "Tex Mex Bowl", "Fried Rice", "Veggie Stir Fry", "Vegan Ramen", "2 Sushi Rolls", "Avocado Toast and Eqqs", "Crispy Tofu, Cucumber and Edamame", "Guac, Eqqs, Salsa and Chips", "Black Bean Burger", "Plant Meat Burger", "White Bean and Kale Soup", "Sweet Potato Hash", "Palak Paneer", "Congolese Shrimp"];
 
-let side = ["French Fries", "Burmese Mango Salad", "Cheesy Popcorn", "Plantains with Ginger Dip", "Guac and Chips", "Steamed Broccoli", "Seaweed Salad", "Baked Chickpeas", "Kabocha Squash", "Grilled Veggies", "Pickled Beets", "Tater Tots"];
+let sauce = ["Congolese Tomato Sauce", "Pili Pili", "Hummus", "Tahini Herb Sauce", "Ginger Sauce", "Orange Sauce", "Chipotle Salsa", "Avocado Poppy Seed Dressing", "Italian Tomato Sauce", "West Indian Curry", "Japanese Curry", "White Bean Dip", "Cashew Cheese", "Walnut Pesto", "Spicy Mayo", "Miso Tahini Butter", "Guacamole", "Ginger Jalapeno Sauce", "Coconut Yogurt"];
 
-let sweets = ["Lemon Poppy Seed Balls", "Black Bean Brownies", "Boba Ice Cream Bar", "Honey Dew", "Asian Pears", "Apple and Peanut Butter", "Oatmeal and Bananas", "Plumcots", "Red Bean Mochi", "Batida de Coco", "Cinnamon Sweet Potatoes", "Granola and Greek Yogurt", "Bananas", "Sunflower Butter Ice Cream", "Kiwis", "Cashew Caramel Ice Cream"];
+let side = ["French Fries", "Burmese Mango Salad", "Cheesy Popcorn", "Plantains", "Tortilla Chips", "Steamed Broccoli", "Seaweed Salad", "Baked Chickpeas", "Kabocha Squash", "Grilled Veggies", "Pickled Beets", "Tater Tots", "Roasted Veggies", "Brussel Sprouts", "Glazed Roasted Carrots and Walnuts", "Mushroom Lentil Mix", "Congolese Spinach", "Basmati Rice"];
+
+let sweets = ["Lemon Poppy Seed Balls", "Black Bean Brownies", "Boba Ice Cream Bar", "Honey Dew", "Asian Pears", "Apple and Peanut Butter", "Oatmeal and Bananas", "Plumcots", "Red Bean Mochi", "Batida de Coco", "Cinnamon Sweet Potatoes", "Granola and Greek Yogurt", "Bananas", "Sunflower Butter Ice Cream", "Kiwis", "Cashew Caramel Ice Cream", "Galettes", "Peach Cobbler"];
 
 //RECIPES
 
 var recipeDict = {
     "Spicy Salmon Onigiri": "Cook 2 cups of sushi rice in a rice cooker. Add avocado oil to the pan. Cook Salmon on medium fire. Add vegeta, black pepper, and green onion. Add a splash of soy sauce. Cook for approx. 15 minutes or to desired cookedness. Add the cooked salmon to a container. Squeeze in mayo and sriracha to desired spicyness and salmon wetness. Put salmon salad in the fridge to cool for 30 minutes. To serve, layer warm sushi rice, cool spicy salmon, and sushi rice in the onigiri shaper. Serving size is 2 onigiri.",
     "Shakshuka": "Heat oven to 375 degrees. Cook onion, oil, and bell pepper over medium-low fire for 20 minutes. Add garlic and cook for 2 minutes. Add in spices and cook 1 minute. Pour in tomatoes and cook for 10 minutes or until thickened. Transfer to baking pan, crack eggs and bake for 7-10 minutes. Add basil and cilantro and serve over bread.", 
-    "Pondu, Rice, and Pili Pili": "Chop all veggies. Boil 2 packs of pondu in water for 10 minutes then strain.",
+    "Pondu and Rice": "Chop all veggies. Boil 2 packs of pondu in water for 10 minutes then strain.",
     "TLT": "Pan fry the chopped tempeh in soy sauce and black pepper. Toast the bread adn layer into a beautiful sandwich.", 
     "Vegan American Breakfast": "",
     "Gnocchi in Red Sauce": "Pan fry the chopped and prepared veggies. Add in red sauce and pesto. Cook gnocchi until chewy, not squishy.", 
@@ -18,7 +20,6 @@ var recipeDict = {
     "Teriyaki Bao": "", 
     "Mediterranean Style Salad": "", 
     "Kale Salad": "Season tempeh with soy sauce, black pepper, and salt and bake at 400 degrees. Prepare and chop veggies. Allow tempeh to cool and combine. Serve salad cold.", 
-    "Ginger Tofu": "", 
     "Curry Salad": "Prepare and chop veggies. Cook chickpeas in west indian curry. Fry or scramble just egg. Let hot items cool and combine to serve salad room temp.", 
     "Tacos": "", 
     "Tex Mex Bowl": "", 
@@ -27,7 +28,7 @@ var recipeDict = {
     "Vegan Ramen": "Boil 2 cups of water.", 
     "2 Sushi Rolls": "Chop and prepare avocado, cucumber, carrots and . Handroll ingredients into 2 sushi rolls.", 
     "Avocado Toast and Eqqs": "", 
-    "Orange Tofu, Cucumber and Edamame": "Make or buy orange tofu from Trader Joe's. ", 
+    "Crispy Tofu, Cucumber and Edamame": "Make or buy orange tofu from Trader Joe's. ", 
     "Guac, Eqqs, Salsa and Chips": "", 
     "Black Bean Burger": "Rinse black beans", 
     "Plant Meat Burger": "",
@@ -56,9 +57,10 @@ var recipeDict = {
     "Cinnamon Sweet Potatoes": "Bake at 450 degrees fahrenheit", 
     "Granola and Greek Yogurt": "", 
     "Bananas" : "4 bananas", 
-    "Sunflower Butter Ice Cream" : "1 pint", 
+    "Sunflower Butter Ice Cream": "1 pint", 
     "Kiwis" : "3 kiwis", 
-    "Cashew Caramel Ice Cream": "1 pint"
+    "Cashew Caramel Ice Cream": "1 pint",
+    "Palak Paneer": "Blanch the spinach for 2 minutes then drain and dry. Prep onion, garlic, ginger, tomatoe, serrano pepper for food processor. Boil Tofu for 2 minutes. Add veggies, spinach and cashews to food processor and blend until smooth. Cook spices, bay leaf, onion, garlic on stove then pour in spinach sauce. Coat tofu cubes in, add lemon or lime juice, and cook for 2 minutes."
     
 };
 
@@ -149,6 +151,30 @@ randomEntree(main);
 
 //refresh entree
 document.querySelector(".redoEntree").addEventListener("click", randomEntree(main));
+
+//------------/
+
+//SAUCE
+function randomSauce(sauce){
+    
+    //show random dish
+    var sauceLength = side.length;
+    var randomNumberFour = Math.floor(Math.random() * sauceLength);
+    var chosenSauce = sauce[randomNumberFour];
+    
+    document.querySelector(".sauce").innerHTML = chosenSauce;
+    
+    //show image for recipe card
+    var recipeImgSauce = "img/" + chosenSauce + ".jpg";
+    var image4 = document.querySelectorAll("img")[1];
+    image4.setAttribute("src", recipeImgSauce);
+        
+    //show recipe directions
+    var recipeDirectionsSauce = document.querySelector(".recipe-directions-sauce");
+    
+};
+
+randomSauce(sauce);
 
 //------------/
 
