@@ -45,29 +45,43 @@
             <h3>3-Part Meal Ideas</h3>
                 <div class="row">
                     <div class="col mx-auto">
-                        <button class="entree"></button>
-                        <button class="redoEntree"><i class="fas fa-redo-alt"></i> Main</button>
+                        <button class="entree" id="message1"></button>
+                        <button  class="redoEntree" type="button"  value="Main" onclick="NewEntree();" alt="">
+                        <i class="fas fa-redo-alt"></i>
+                        </button>
                     </div>
                 </div>
                 
                 <div class="row">
                     <div class="col mx-auto">
-                        <button class="sauce"></button>
-                        <button class="redoSide"><i class="fas fa-redo-alt"></i> Sauce</button>
+                        <button class="sauce"
+                            id="message2"
+                        ></button>
+                        <button  class="redoSauce" type="button"  value="Sauce" onclick="NewSauce();" alt="">
+                        <i class="fas fa-redo-alt"></i>
+                        </button>
                     </div>
                 </div>
                 
                  <div class="row">
                     <div class="col mx-auto">
-                        <button class="side"></button>
-                        <button class="redoSide"><i class="fas fa-redo-alt"></i> Side</button>
+                        <button class="side"
+                            id="message3"
+                        ></button>
+                        <button  class="redoSide" type="button"  value="Side" onclick="NewSide();" alt="">
+                        <i class="fas fa-redo-alt"></i>
+                        </button>
                     </div>
                 </div>
                 
                  <div class="row">
                     <div class="col mx-auto">
-                        <button class="sweets"></button>
-                        <button class="redoSweet"><i class="fas fa-redo-alt"></i> Sweet</button>
+                        <button class="sweets"
+                            id="message4"
+                        ></button>
+                        <button  class="redoSweet" type="button"  value="Sweet" onclick="NewSweet();" alt="">
+                        <i class="fas fa-redo-alt"></i>
+                        </button>
                     </div>
                 </div>
         </div>
@@ -87,7 +101,8 @@
             <div class="card" style="width: 19rem;">
               <img class="card-img-top image1" src="" alt="">
               <div class="card-body">
-                <p class="card-text recipe-directions-main">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <div class="card-title"></div>
+                <p class="card-text recipe-directions-main"></p>
               </div>
             </div>
             </div>
@@ -96,7 +111,8 @@
                <div class="card" style="width: 19rem;">
               <img class="card-img-top image2" src="" alt="">
               <div class="card-body">
-                <p class="card-text recipe-directions-side">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <div class="card-title"></div>
+                <p class="card-text recipe-directions-side"></p>
               </div>
             </div>
             </div>
@@ -105,7 +121,8 @@
                <div class="card" style="width: 19rem;">
               <img class="card-img-top image3" src="" alt="">
               <div class="card-body">
-                <p class="card-text recipe-directions-sweet">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <div class="card-title"></div>
+                <p class="card-text recipe-directions-sweet"></p>
               </div>
             </div>
             </div>

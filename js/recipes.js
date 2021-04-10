@@ -1,11 +1,11 @@
 //DISHES
-let main = ["Spicy Salmon Onigiri", "Shakshuka", "Pondu and Rice", "TLT", "Vegan American Breakfast", "Gnocchi", "Japanese Style Macro Bowl", "Teriyaki Bao", "Mediterranean Style Salad", "Kale Salad", "Curry Salad", "Tacos", "Tex Mex Bowl", "Fried Rice", "Veggie Stir Fry", "Vegan Ramen", "2 Sushi Rolls", "Avocado Toast and Eqqs", "Crispy Tofu, Cucumber and Edamame", "Guac, Eqqs, Salsa and Chips", "Black Bean Burger", "Plant Meat Burger", "White Bean and Kale Soup", "Sweet Potato Hash", "Palak Paneer", "Congolese Shrimp"];
+let main = ["Spicy Salmon Onigiri", "Shakshuka", "Pondu and Rice", "TLT", "Vegan American Breakfast", "Gnocchi", "Japanese Style Macro Bowl", "Teriyaki Bao", "Mediterranean Style Salad", "Kale Salad", "Curry Salad", "Tacos", "Tex Mex Bowl", "Fried Rice", "Veggie Stir Fry", "Vegan Ramen", "2 Sushi Rolls", "Avocado Toast and Eqqs", "Crispy Tofu, Cucumber and Edamame", "Guac, Eqqs, Salsa and Chips", "Black Bean Burger", "Plant Meat Burger", "White Bean and Kale Soup", "Sweet Potato Hash", "Palak Paneer", "Congolese Shrimp", "Sushi Bake", "Lentil Bolognese", "Burmese Tea Leaf Salad", "Gyros"];
 
 let sauce = ["Congolese Tomato Sauce", "Pili Pili", "Hummus", "Tahini Herb Sauce", "Ginger Sauce", "Orange Sauce", "Chipotle Salsa", "Avocado Poppy Seed Dressing", "Italian Tomato Sauce", "West Indian Curry", "Japanese Curry", "White Bean Dip", "Cashew Cheese", "Walnut Pesto", "Spicy Mayo", "Miso Tahini Butter", "Guacamole", "Ginger Jalapeno Sauce", "Coconut Yogurt"];
 
-let side = ["French Fries", "Burmese Mango Salad", "Cheesy Popcorn", "Plantains", "Tortilla Chips", "Steamed Broccoli", "Seaweed Salad", "Baked Chickpeas", "Kabocha Squash", "Grilled Veggies", "Pickled Beets", "Tater Tots", "Roasted Veggies", "Brussel Sprouts", "Glazed Roasted Carrots and Walnuts", "Mushroom Lentil Mix", "Congolese Spinach", "Basmati Rice"];
+let side = ["French Fries", "Burmese Mango Salad", "Plantains", "Tortilla Chips", "Steamed Broccoli", "Seaweed Salad", "Baked Chickpeas", "Kabocha Squash", "Grilled Veggies", "Pickled Beets", "Tater Tots", "Roasted Veggies", "Brussel Sprouts", "Glazed Roasted Carrots and Walnuts", "Mushroom Lentil Mix", "Congolese Spinach", "Basmati Rice", "Cucumbers", "Pinapple Fried Rice", "Thai Coconut Rice"];
 
-let sweets = ["Lemon Poppy Seed Balls", "Black Bean Brownies", "Boba Ice Cream Bar", "Honey Dew", "Asian Pears", "Apple and Peanut Butter", "Oatmeal and Bananas", "Plumcots", "Red Bean Mochi", "Batida de Coco", "Cinnamon Sweet Potatoes", "Granola and Greek Yogurt", "Bananas", "Sunflower Butter Ice Cream", "Kiwis", "Cashew Caramel Ice Cream", "Galettes", "Peach Cobbler"];
+let sweets = ["Lemon Poppy Seed Balls", "Black Bean Brownies", "Boba Ice Cream Bar", "Honey Dew", "Asian Pears", "Apple and Peanut Butter", "Apple Pie Oatmeal", "Plumcots", "Red Bean Mochi", "Batida de Coco", "Cinnamon Sweet Potatoes", "Granola and Greek Yogurt", "Bananas", "Sunflower Butter Ice Cream", "Kiwis", "Cashew Caramel Ice Cream", "Galettes", "Peach Cobbler", "Peanut Butter Protein Waffles", "Chocolate Rice Cooker Cake"];
 
 //RECIPES
 
@@ -23,7 +23,7 @@ var recipeDict = {
     "Curry Salad": "Prepare and chop veggies. Cook chickpeas in west indian curry. Fry or scramble just egg. Let hot items cool and combine to serve salad room temp.", 
     "Tacos": "", 
     "Tex Mex Bowl": "", 
-    "Fried Rice": "", 
+    "Fried Rice": "eep", 
     "Veggie Stir Fry": "Prepare and chop veggies.", 
     "Vegan Ramen": "Boil 2 cups of water.", 
     "2 Sushi Rolls": "Chop and prepare avocado, cucumber, carrots and . Handroll ingredients into 2 sushi rolls.", 
@@ -60,7 +60,12 @@ var recipeDict = {
     "Sunflower Butter Ice Cream": "1 pint", 
     "Kiwis" : "3 kiwis", 
     "Cashew Caramel Ice Cream": "1 pint",
-    "Palak Paneer": "Blanch the spinach for 2 minutes then drain and dry. Prep onion, garlic, ginger, tomatoe, serrano pepper for food processor. Boil Tofu for 2 minutes. Add veggies, spinach and cashews to food processor and blend until smooth. Cook spices, bay leaf, onion, garlic on stove then pour in spinach sauce. Coat tofu cubes in, add lemon or lime juice, and cook for 2 minutes."
+    "Palak Paneer": "Blanch the spinach for 2 minutes then drain and dry. Prep onion, garlic, ginger, tomatoe, serrano pepper for food processor. Boil Tofu for 2 minutes. Add veggies, spinach and cashews to food processor and blend until smooth. Cook spices, bay leaf, onion, garlic on stove then pour in spinach sauce. Coat tofu cubes in, add lemon or lime juice, and cook for 2 minutes.",
+    "Pineapple Fried Rice": "1/4 cup pineapple, 1/2 cup frozen peas, 1/4 cup diced onion, 2 tbsp olive oil, 2 tsp sesame oil, 1/2 tsp ginger powder, 1/4 cup green onion, 3/4 short grain rice, 1.5 vegetable broth, 1 egg",
+    "Thai Coconut Rice": "3/4 cup jasmine rice, 1/2 cup coconut cream, 1/ cup water, 1/4 tsp sea salt, 1/4 tsp coconut oil",
+    "Rice Cooker Chocolate Cake": "1/2 cup cane sugar, 6 tbsp butter, 1 egg, 1 tsp vanilla extract, 1/2 tsp baking powder, 1 cup flour, 1/4 cup cocoa powder, 1/2 cup oat milk",
+    "Cilantro Lime Rice": "1 tsp olive oil, 1/4 cup chopped onion, 1 clove garlic, 3/4 long grain jasmine rice, 1.25 cup water, 1/8 tsp salt, 1 tbsp freshly squeezed lime juice, 1/8 cup chopped cilantro"
+    
     
 };
 
@@ -117,7 +122,11 @@ var recipeDict = {
 //    "Bananas" : ["4 bananas"], 
 //    "Sunflower Butter Ice Cream" : ["1 pint of Sunflower Butter Ice Cream"], 
 //    "Kiwis" : ["3 kiwis"], 
-//    "Cashew Caramel Ice Cream": ["1 pint of So Delicious Cashew Caramel Ice Cream"]
+//    "Cashew Caramel Ice Cream": ["1 pint of So Delicious Cashew Caramel Ice Cream"],
+//    "Rice Cooker Chocolate Cake: ["1 pint of So Delicious Cashew Caramel Ice Cream"],
+//    "Coconut Rice": ["Coat the inside of the rice cooker with coconut oil and add the rice, water and coconut milk. Cover and turn the rice cooker on."],
+//    "Pineapple Fried Rice": ["Cook brown rice in the rice cooker with vegetable broth. While the rice is cooking, saute the peas, carrots, and onion on the stove with 1 tbsp olive oil and 1 tsp sesame oil until onions are translucent. Add pinapple, egg, and green onion. When rice is finished cooking, heat the remaining tbsp of olive oil and 1 sp of sesame oil in pan and add rice. Stir for about 1 minute before adding the other ingredients. Cook for 2-3 minutes and serve immediately."],
+//"Cilantro Lime Rice": ["Add olive oil and choppen onion to the rice cooker then switch on. When the onion begins to soften, add the garlic, rice, water, and salt. Cook until all the water is absorbed. Fluff rice with a fork. Stir in lime juice and cilantro and serve immediately"]
 //    
 //};
 
@@ -131,7 +140,7 @@ function randomEntree(main){
     var randomNumber = Math.floor(Math.random() * mainLength);
     var chosenMain = main[randomNumber];
     
-//    return chosenMain;
+    //return chosenMain;
     document.querySelector(".entree").innerHTML = chosenMain;
     
     //show image for recipe card
@@ -139,18 +148,39 @@ function randomEntree(main){
     var image1 = document.querySelectorAll("img")[0];
     image1.setAttribute("src", recipeImgMain);
     
-    //show recipe directions
-    var recipeDirectionsMain = document.querySelector(".recipe-directions-main");
+    //show recipe title
+    document.querySelectorAll(".card-title")[0].innerHTML = chosenMain;
     
+    //show recipe directions
+    var recipeDirectionsMain = document.querySelectorAll(".card-text")[0].innerHTML = recipeDict[chosenMain];
     
     //show ingredients in grocery list on click
+    
+    
     
 };
 
 randomEntree(main);
 
-//refresh entree
-document.querySelector(".redoEntree").addEventListener("click", randomEntree(main));
+
+function NewEntree()
+{
+    var random = main[Math.floor(Math.random() * main.length)];
+    
+   //show new entree when button is pressed
+    document.getElementById("message1").innerHTML=random;
+    
+    //show image for recipe card
+    var recipeImgMain = "img/" + random + ".jpg";
+    var image1 = document.querySelectorAll("img")[0];
+    image1.setAttribute("src", recipeImgMain);
+    
+    //show recipe title
+    document.querySelectorAll(".card-title")[0].innerHTML = random;
+    
+    //show recipe directions
+    var recipeDirectionsMain = document.querySelectorAll(".card-text")[0].innerHTML = recipeDict[random];
+}
 
 //------------/
 
@@ -176,6 +206,14 @@ function randomSauce(sauce){
 
 randomSauce(sauce);
 
+function NewSauce()
+{
+    var random = sauce[Math.floor(Math.random() * sauce.length)];
+    
+   //show new side when button is pressed
+    document.getElementById("message2").innerHTML=random;
+}
+
 //------------/
 
 //SIDES
@@ -195,8 +233,12 @@ function randomSide(side){
         
     //show recipe directions
     var recipeDirectionsSide = document.querySelector(".recipe-directions-side");
+        
+    //show recipe title
+    document.querySelectorAll(".card-title")[1].innerHTML = chosenSide;
     
-    
+    //show recipe directions
+    var recipeDirectionsMain = document.querySelectorAll(".card-text")[1].innerHTML = recipeDict[chosenSide];
     
     //show ingredients in grocery list on click
         //maybe I need to push items into an array that places each item as a li
@@ -205,8 +247,24 @@ function randomSide(side){
 
 randomSide(side);
 
-//refresh side
-document.querySelector(".redoEntree").addEventListener("click", randomSide(side));
+function NewSide()
+{
+    var anotherSide = side[Math.floor(Math.random() * side.length)];
+    
+   //show new side when button is pressed
+    document.getElementById("message3").innerHTML=anotherSide;
+    
+    //new recipe photo based on choice
+    var recipeImgSide = "img/" + anotherSide + ".jpg";
+    var image2 = document.querySelectorAll("img")[1];
+    image2.setAttribute("src", recipeImgSide);
+   
+    //show recipe title
+    document.querySelectorAll(".card-title")[1].innerHTML = anotherSide;
+    
+    //show recipe directions
+    var recipeDirectionsMain = document.querySelectorAll(".card-text")[1].innerHTML = recipeDict[anotherSide];
+}
 
 //------------/
 
@@ -217,18 +275,22 @@ function randomDessert(sweets){
     var sweetsLength = sweets.length;
     var randomNumberThree = Math.floor(Math.random() * sweetsLength);
     var chosenDessert = sweets[randomNumberThree];
-    
-    document.querySelector(".sweets").innerHTML = chosenDessert;
+     document.querySelector(".sweets").innerHTML = chosenDessert;
     
     //show image for recipe card
     var recipeImgSweet = "img/" + chosenDessert + ".jpg"; 
     var image3 = document.querySelectorAll("img")[2];
     image3.setAttribute("src", recipeImgSweet);
     
+    //show recipe title
+    document.querySelectorAll(".card-title")[2].innerHTML = chosenDessert;
+    
+    //show recipe directions
+    var recipeDirectionsMain = document.querySelectorAll(".card-text")[2].innerHTML = recipeDict[chosenDessert];
+    
     // show ingredients in the grocery list
     var recipeDirectionsSweet = document.querySelector(".recipe-directions-sweet");
     
-    //show recipe directions in card
     
 };
 
@@ -236,6 +298,25 @@ randomDessert(sweets);
 
 //refresh sweet
 document.querySelector(".redoEntree").addEventListener("click", randomDessert(sweets));
+
+function NewSweet()
+{
+    var anotherSweet = sweets[Math.floor(Math.random() * sweets.length)];
+    
+   //show new side when button is pressed
+    document.getElementById("message4").innerHTML = anotherSweet;
+    
+    //show image for recipe card
+    var recipeImgSweet = "img/" + anotherSweet + ".jpg"; 
+    var image3 = document.querySelectorAll("img")[2];
+    image3.setAttribute("src", recipeImgSweet);
+    
+    //show recipe title
+    document.querySelectorAll(".card-title")[2].innerHTML = anotherSweet + " Recipe";
+    
+     //show recipe directions
+    var recipeDirectionsMain = document.querySelectorAll(".card-text")[2].innerHTML = recipeDict[anotherSweet];
+}
 
 //-------------------------------------------------
 
@@ -265,16 +346,3 @@ function addToGroceryList(){
     //allow the items to be sent to notes/email/messages or something to generate the list
 
     
-
-
-
-function showIngredients(){
-    
-//    identify which dishes are being shown
-    
-    
-//    create a card for each recipe
-    
-    
-    console.log("show list items of ingredients")
-}
