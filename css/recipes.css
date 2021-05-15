@@ -4,14 +4,32 @@
 }
 
 .recipePage{
-    background-image: linear-gradient(120deg,#461220,#B23A48);
     color: white;
     min-height: 100vh;
+    background-color: #FFBF69;
 /*    padding: 5%;*/
 }
 
 .top{
     display: flex;
+}
+
+/*PAGE IN 4 PARTS*/
+.partA{
+    width: 25%;
+    background-image: linear-gradient(180deg,#FF9F1C,#B23A48);
+}
+.partB{
+    width: 25%;
+    background-image: linear-gradient(180deg,#FFBF69,#B23A48);
+}
+.partC{
+    width: 25%;
+    background-image: linear-gradient(180deg,#CBF3F0,#B23A48);
+}
+.partD{
+    width: 25%;
+    background-image: linear-gradient(180deg,#2EC4B6,#B23A48);
 }
 
 /*RECIPES*/
@@ -108,7 +126,7 @@
 
 .recipe-cards img{
     height: auto;
-    width: 300px;
+    width: 25vw;
     padding: 1rem;
 }
 
@@ -119,6 +137,9 @@
 
 @media screen and (max-width:768px)
 {
+    .threeMeal{
+    flex-direction: column;
+}
     .top{
         flex-direction: column;
     }
@@ -128,11 +149,14 @@
     }
     
     .card{
-        width: 80vw;
+        width: 100vw;
+        margin: 0;
     }
     
     .card img{
-        width: 60vw;
+        width: 50vw;
+        
+        
     }
     
     .grocery-container{
