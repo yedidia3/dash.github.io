@@ -3,7 +3,7 @@ var main = ["Spicy Salmon Onigiri", "Shakshuka", "Pondu and Rice", "TLT", "Vegan
 
 var sauce = ["Congolese Tomato Sauce", "Pili Pili", "Hummus", "Tahini Herb Sauce", "Ginger Sauce", "Orange Sauce", "Chipotle Salsa", "Avocado Poppy Seed Dressing", "Italian Tomato Sauce", "West Indian Curry", "Japanese Curry", "White Bean Dip", "Cashew Nacho Cheese", "Walnut Pesto", "Spicy Mayo", "Miso Tahini Butter", "Guacamole", "Ginger Jalapeno Sauce"];
 
-var side = ["French Fries", "Burmese Mango Salad", "Plantains", "Tortilla Chips", "Steamed Broccoli", "Seaweed Salad", "Baked Chickpeas", "Kabocha Squash", "Grilled Veggies", "Pickled Beets", "Tater Tots", "Roasted Veggies", "Congolese Spinach", "Basmati Rice", "Cucumbers", "Pinapple Fried Rice"];
+var side = ["French Fries", "Burmese Mango Salad", "Plantains", "Tortilla Chips", "Steamed Broccoli", "Seaweed Salad", "Baked Chickpeas", "Kabocha Squash", "Grilled Veggies", "Pickled Beets", "Tater Tots", "Roasted Veggies", "Congolese Spinach", "Basmati Rice", "Pinapple Fried Rice"];
 
 var sweets = ["Lemon Poppy Seed Balls", "Brownies", "Boba Ice Cream Bar", "Apple and Peanut Butter", "Apple Pie Oatmeal", "Red Bean Mochi", "Batida de Coco", "Cinnamon Sweet Potatoes", "Granola, Strawberries and Greek Yogurt", "Bananas", "Sunflower Butter Ice Cream", "Honey Dew, Kiwis, Asian Pears, Plumcots", "Cashew Caramel Ice Cream", "Galettes", "Peach Cobbler", "Peanut Butter Protein Waffles", "Green Tea Ice Cream"];
 
@@ -134,7 +134,6 @@ var groceryDict = {
     "Roasted Veggies": [], 
     "Congolese Spinach": ["spinach"], 
     "Basmati Rice": ["basmati rice"], 
-    "Cucumbers": ["cucumbers"], 
     "Pinapple Fried Rice": ["pineapple", "jasmine rice", "soy sauce"],
     "Congolese Tomato Sauce": ["1 bunch of green onion", "tomato paste", "toamtoes", "black pepper", "salt", "vegeta all purpose seasoning"], 
     "Pili Pili": ["8 orange habaneros", "1 lemon", "vegeta all purpose seasoning", "black pepper"], 
