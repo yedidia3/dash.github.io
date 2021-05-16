@@ -32,7 +32,7 @@
 .partA .card,.partB .card, .partC .card,.partD .card {
     color: white;
     background-color: transparent;
-    width: 22vw;
+    width: 25vw;
     border: none;
 }
 
@@ -151,17 +151,30 @@
         flex-direction: column;
     }
     
-    .partA, .partB, .partC,.partD{
+    .partA, .partB, .partC,.partD, .partA .card img,.partB .card img, .partC .card img,.partD .card img, .partA .card,.partB .card, .partC .card,.partD .card {
+        width: 100vw;
         min-width: 100vw;
         height: auto;
 /*        float: left; */
         font-size: 1.3rem;
     }
+
     
+/*
+    .partA, .partB, .partC,.partD{
+        min-width: 100vw;
+        height: auto;
+        float: left; 
+        font-size: 1.3rem;
+    }
+*/
+    
+/*
     .partA .card,.partB .card, .partC .card,.partD .card, .partA,.partB, .partC,.partD{
         width: 100vw;
         margin: 0;
     }
+*/
     
     .partA .card img,.partB .card img, .partC .card img,.partD .card img{
         padding: 0 15vw;
