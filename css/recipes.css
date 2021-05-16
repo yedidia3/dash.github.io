@@ -54,6 +54,7 @@
 
 .threeMeal{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     flex: 1.5;
@@ -133,7 +134,7 @@
 }
 
 
-@media screen and (max-width:768px)
+@media screen and (max-width:850px)
 {
     .body{
         overflow-x: hidden;

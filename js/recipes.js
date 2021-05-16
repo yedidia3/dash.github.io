@@ -182,11 +182,28 @@ function randomEntree(main){
     //show ingredient list
     var groceryDirectionsMain = document.querySelectorAll(".card-list")[0].innerHTML = groceryDict[chosenMain];
     
+
+    // Make the list
+//    listElement = document.querySelector('inListOne');
+////    // Set up a loop that goes through the items in listItems one at a time
+//    numberOfListItems = groceryDict[chosenMain].length,
+//    listItem,
+//    i;
+//    for (i = 0; i < groceryDict[chosenMain].length; ++i) {
+//        // create an item for each one
+//        listItem = document.createElement('li');
+//
+//        // Add the item text
+//        listItem.innerHTML = groceryDict[chosenMain][i];
+//
+//        // Add listItem to the listElement
+//        listElement.appendChild(listItem);
+//    }
     // create li
-//    const newTodo = document.createElement("li");
-//    newTodo.innerText = todoInput.value;
-//    newTodo.classList.add("todo-item");
-//    todoDiv.appendChild(newTodo);
+//    const newIng = document.createElement("li");
+//    newIng.innerText = groceryDict[chosenMain];
+//    newIng.classList.add("inListOne");
+//    todoDiv.appendChild(newIng);
 //    
     //show ingredients in grocery list on click
      
