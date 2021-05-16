@@ -3,7 +3,7 @@ var main = ["Spicy Salmon Onigiri", "Shakshuka", "Pondu and Rice", "TLT", "Vegan
 
 var sauce = ["Congolese Tomato Sauce", "Pili Pili", "Hummus", "Tahini Herb Sauce", "Ginger Sauce", "Orange Sauce", "Chipotle Salsa", "Avocado Poppy Seed Dressing", "Italian Tomato Sauce", "West Indian Curry", "Japanese Curry", "White Bean Dip", "Cashew Nacho Cheese", "Walnut Pesto", "Spicy Mayo", "Miso Tahini Butter", "Guacamole", "Ginger Jalapeno Sauce"];
 
-var side = ["French Fries", "Burmese Mango Salad", "Plantains", "Tortilla Chips", "Steamed Broccoli", "Seaweed Salad", "Baked Chickpeas", "Kabocha Squash", "Grilled Veggies", "Pickled Beets", "Tater Tots", "Roasted Veggies", "Congolese Spinach", "Basmati Rice", "Cucumbers", "Pinapple Fried Rice", "Thai Coconut Rice"];
+var side = ["French Fries", "Burmese Mango Salad", "Plantains", "Tortilla Chips", "Steamed Broccoli", "Seaweed Salad", "Baked Chickpeas", "Kabocha Squash", "Grilled Veggies", "Pickled Beets", "Tater Tots", "Roasted Veggies", "Congolese Spinach", "Basmati Rice", "Cucumbers", "Pinapple Fried Rice"];
 
 var sweets = ["Lemon Poppy Seed Balls", "Brownies", "Boba Ice Cream Bar", "Apple and Peanut Butter", "Apple Pie Oatmeal", "Red Bean Mochi", "Batida de Coco", "Cinnamon Sweet Potatoes", "Granola, Strawberries and Greek Yogurt", "Bananas", "Sunflower Butter Ice Cream", "Honey Dew, Kiwis, Asian Pears, Plumcots", "Cashew Caramel Ice Cream", "Galettes", "Peach Cobbler", "Peanut Butter Protein Waffles"];
 
@@ -143,7 +143,7 @@ var groceryDict = {
     "Chipotle Salsa": [], 
     "Avocado Poppy Seed Dressing": ["1 avocado", "poppy seed dressing"], 
     "Italian Tomato Sauce": ["italian seasoning", "tomatoes", "garlic", "salt", "black pepper"], 
-    "West Indian Curry": ["west indian curry paste"], 
+    "West Indian Curry": ["west indian curry paste", "mild jerk paste"], 
     "Japanese Curry": ["japanese curry paste block", "miso paste"], 
     "White Bean Dip": [], 
     "Cashew Nacho Cheese": ["cashews", "dijon mustard", "nutritional yeast", "umami seasoning", "unsweetened oat milk", "corn starch"], 
@@ -250,10 +250,10 @@ randomSauce(sauce);
 
 function NewSauce()
 {
-    var random = sauce[Math.floor(Math.random() * sauce.length)];
+    var randomnumberD = sauce[Math.floor(Math.random() * sauce.length)];
     
    //show new side when button is pressed
-    document.getElementById("message2").innerHTML=random;
+    document.getElementById("message2").innerHTML=randomnumberD;
     
      //new recipe photo based on choice
     var recipeImgSide = "img/" + anotherSauce + ".jpg";
@@ -350,8 +350,8 @@ function randomDessert(sweets){
     //show recipe directions
     var recipeDirectionsMain = document.querySelectorAll(".card-text")[3].innerHTML = recipeDict[chosenDessert];
     
-    // show ingredients in the grocery list
-    var recipeDirectionsSweet = document.querySelector(".recipe-directions-sweet");
+    //show ingredients
+    var groceryDirectionsMain = document.querySelectorAll(".card-list")[3].innerHTML = groceryDict[chosenDessert];
     
     
 };

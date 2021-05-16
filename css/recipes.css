@@ -37,13 +37,12 @@
 
 .partD{
 /*    background-image: linear-gradient(180deg,#2EC4B6,#B23A48);*/
-    background-color: ffe1a8;
+    background-color: #ffe1a8;
 }
 
+
+
 /*RECIPES*/
-
-
-
 .recipe-directions-main, .recipe-directions-side, .recipe-directions-sweet{
     list-style: disc;
 }
@@ -113,13 +112,6 @@
     padding: 0.4rem;
 }
 
-/*
-.recipe-cards{
-    justify-content: center;
-    align-content: center;
-    display: flex;
-}
-*/
 
 .partA .card img,.partB .card img, .partC .card img,.partD .card img{
 /*  clip: rect(0, 23vw, 20vw, 0);*/
@@ -139,18 +131,12 @@
 {
     .body{
         overflow-x: hidden;
+        
     }
     .threeMeal{
         flex-direction: column;
     }
     
-    .top{
-        flex-direction: column;
-    }
-    .recipe-cards{
-        align-content: center;
-        justify-content: center;
-    }
     
     .partA .card,.partB .card, .partC .card,.partD .card, .partA,.partB, .partC,.partD{
         width: 100vw;
