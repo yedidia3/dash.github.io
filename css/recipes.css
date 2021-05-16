@@ -58,6 +58,7 @@
     text-align: center;
     flex: 1.5;
     flex-direction: row;
+    width: 100vw;
 }
 
 
@@ -112,10 +113,15 @@
     padding: 0.4rem;
 }
 
+.partA, .partB, .partC,.partD{
+    width: 25vw;
+    float: left; 
+}
+
 
 .partA .card img,.partB .card img, .partC .card img,.partD .card img{
 /*  clip: rect(0, 23vw, 20vw, 0);*/
-/*    width: 25vw;*/
+    width: 25vw;
     float: left; 
 }
 
