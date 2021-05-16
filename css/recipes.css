@@ -66,8 +66,7 @@
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    flex-direction: row;
-    width: 100vw;
+    min-width: 100vw;
     height: auto;
 }
 
@@ -152,10 +151,11 @@
     }
     .threeMeal{
         flex-direction: column;
+        justify-content: 
     }
     
     .partA, .partB, .partC,.partD{
-        width: 100vw;
+        min-width: 100vw;
         height: auto;
 /*        float: left; */
         font-size: 1.3rem;
