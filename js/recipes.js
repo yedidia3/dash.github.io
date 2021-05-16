@@ -17,13 +17,13 @@ var recipeDict = {
     "Vegan American Breakfast": "Cook the eqqs, vegan meat and potatoes.",
     "Gnocchi in Red Sauce": "Pan fry the chopped and prepared veggies. Add in red sauce and pesto. Cook gnocchi until chewy, not squishy.", 
     "Japanese Style Macro Bowl": "", 
-    "Teriyaki Bao": "Stir fr", 
+    "Teriyaki Bao": "Chop veggies. Prepare the yeast. Stir fry veggies while the yeast rises. Wrap veggies in dough balls and steam on medium heat for 8 minutes.", 
     "Mediterranean Style Salad": "", 
     "Kale Salad": "Season tempeh with soy sauce, black pepper, and salt and bake at 400 degrees. Prepare and chop veggies. Allow tempeh to cool and combine. Serve salad cold.", 
     "Curry Salad": "Prepare and chop veggies. Cook chickpeas in west indian curry. Fry or scramble just egg. Let hot items cool and combine to serve salad room temp.", 
     "Tacos de Alambre": "Stir fry the bacon and add the veggies. Served on a corn tortilla.", 
     "Tex Mex Bowl": "", 
-    "Fried Rice": "eep", 
+    "Fried Rice": "This is down best with older rice. Add a sesame oil to pan on medium fire. Stir fry veggies, add rice and soy sauce.", 
     "Veggie Stir Fry": "Prepare and chop veggies.", 
     "Vegan Ramen": "Boil 2 cups of water.", 
     "2 Sushi Rolls": "Chop and prepare avocado, cucumber, carrots and . Handroll ingredients into 2 sushi rolls.", 
@@ -39,7 +39,7 @@ var recipeDict = {
     "Guac and Chips": "Cop and mix the ingredients to make a slightly chunky guac.", 
     "Steamed Broccoli": "Prepare and chop broccoli. Pan steam broccoli on medium high heat for 5 minutes.", 
     "Seaweed Salad": "", 
-    "Baked Chickpeas": "After rinsing chickpeas, pour into a bowl with oil then season. Baked on a sheet at 415 degrees fahrenheit for 10 minutes.", 
+    "Baked Chickpeas": "After rinsing chickpeas, pour into a bowl with oil and mix. Spread on baking sheet and season. Baked at 410°F for 20 minutes.", 
     "Kabocha Squash": "", 
     "Grilled Veggies": "Prepare and chop veggies.", 
     "Pickled Beets": "Boil beets for 10 minutes. Strain and sqeeze lemon juice and salt on the beets. Serve cold.", 
@@ -95,7 +95,7 @@ var groceryDict = {
     "Sweet Potato Hash": [], 
     "Palak Paneer": ["spinach", "cashews", "garam masala", ""], 
     "Noodle Stir Fry": [], 
-    "Sushi Bake": [], 
+    "Sushi Bake": ["spicy mayo", "furikake rice seasoning"], 
     "Nachos": ["nacho cheez", "1 can of black beans", "gucamole", "pickled jalapenos", "tortilla chips"], 
     "Burmese Tea Leaf Salad": [], 
     "Gyros": ["tomato", "onion"], 
@@ -154,6 +154,8 @@ var groceryDict = {
     "Ginger Jalapeno Sauce": []
 }
     
+//GROCERY ARRAY 
+var groceryArray = [];
 
 
 //FUNCTIONS -------------------------------------
@@ -182,31 +184,30 @@ function randomEntree(main){
     //show ingredient list
     var groceryDirectionsMain = document.querySelectorAll(".card-list")[0].innerHTML = groceryDict[chosenMain];
     
+    
+// MAKING THE INGREDIENT LIST
+    //create ul in card
+    var ul = document.createElement("ul");
+    
+    // add list to card body
+    var cardbody = document.querySelectorAll(".card-body")[0].appendChild(ul);
+    
+    // display items in the list
+    for (var i = 0; i <= groceryDict[chosenMain].length; i++) {
+        
+        //create a list item with the class name items
+        var li = document.createElement("li");  
+        li.className = "items";
+        
+        // setting inner html to ingredients
+        var a = document.createElement("a");
+        a.innerHTML = groceryDict[chosenMain][i];
 
-    // Make the list
-//    listElement = document.querySelector('inListOne');
-////    // Set up a loop that goes through the items in listItems one at a time
-//    numberOfListItems = groceryDict[chosenMain].length,
-//    listItem,
-//    i;
-//    for (i = 0; i < groceryDict[chosenMain].length; ++i) {
-//        // create an item for each one
-//        listItem = document.createElement('li');
-//
-//        // Add the item text
-//        listItem.innerHTML = groceryDict[chosenMain][i];
-//
-//        // Add listItem to the listElement
-//        listElement.appendChild(listItem);
-//    }
-    // create li
-//    const newIng = document.createElement("li");
-//    newIng.innerText = groceryDict[chosenMain];
-//    newIng.classList.add("inListOne");
-//    todoDiv.appendChild(newIng);
-//    
-    //show ingredients in grocery list on click
-     
+        li.appendChild(a);
+        ul.appendChild(li);
+    }
+    
+    // Push items to grocery list on click
     
 };
 
@@ -233,7 +234,11 @@ function NewEntree()
     
     //show ingredients
     var groceryDirectionsMain = document.querySelectorAll(".card-list")[0].innerHTML = groceryDict[anotherEntree];
-}
+    
+
+    
+    }
+    
 
 //------------/
 
@@ -261,6 +266,28 @@ function randomSauce(sauce){
     //show ingredients
     var groceryDirectionsSauce = document.querySelectorAll(".card-list")[1].innerHTML = groceryDict[chosenSauce];
     
+    // MAKING THE INGREDIENT LIST
+    //create ul in card
+    var ul = document.createElement("ul");
+    
+    // add list to card body
+    var cardbody = document.querySelectorAll(".card-body")[1].appendChild(ul);
+    
+    // display items in the list
+    for (var i = 0; i <= groceryDict[chosenSauce].length; i++) {
+        
+        //create a list item with the class name items
+        var li = document.createElement("li");  
+        li.className = "items";
+        
+        // setting inner html to ingredients
+        var a = document.createElement("a");
+        a.innerHTML = groceryDict[chosenSauce][i];
+
+        li.appendChild(a);
+        ul.appendChild(li);
+    }
+    
 };
 
 randomSauce(sauce);
@@ -276,16 +303,15 @@ function NewSauce()
     var recipeImgSide = "img/" + anotherSauce + ".jpg";
     var image2 = document.querySelectorAll("img")[1];
     image2.setAttribute("src", recipeImgSauce);
-   
-    //show recipe title
-//    document.querySelectorAll(".card-title")[1].innerHTML = anotherSauce;
     
     //show recipe directions
     var recipeDirectionsMain = document.querySelectorAll(".card-text")[1].innerHTML = recipeDict[anotherSauce];
     
     //show ingredients
     var groceryDirectionsMain = document.querySelectorAll(".card-list")[1].innerHTML = groceryDict[anotherSauce];
-}
+    }
+
+    
 
 //------------/
 
@@ -307,14 +333,34 @@ function randomSide(side){
     //show recipe directions
     var recipeDirectionsSide = document.querySelector(".recipe-directions-side");
         
-    //show recipe title
-//    document.querySelectorAll(".card-title")[2].innerHTML = chosenSide;
     
     //show recipe directions
     var recipeDirectionsMain = document.querySelectorAll(".card-text")[2].innerHTML = recipeDict[chosenSide];
     
     //show ingredients
     var groceryDirectionsMain = document.querySelectorAll(".card-list")[2].innerHTML = groceryDict[chosenSide];
+    
+    // MAKING THE INGREDIENT LIST
+    //create ul in card
+    var ul = document.createElement("ul");
+    
+    // add list to card body
+    var cardbody = document.querySelectorAll(".card-body")[2].appendChild(ul);
+    
+    // display items in the list
+    for (var i = 0; i <= groceryDict[chosenSide].length; i++) {
+        
+        //create a list item with the class name items
+        var li = document.createElement("li");  
+        li.className = "items";
+        
+        // setting inner html to ingredients
+        var a = document.createElement("a");
+        a.innerHTML = groceryDict[chosenSide][i];
+
+        li.appendChild(a);
+        ul.appendChild(li);
+    }
     
     //show ingredients in grocery list on click
         //maybe I need to push items into an array that places each item as a li
@@ -334,9 +380,6 @@ function NewSide()
     var recipeImgSide = "img/" + anotherSide + ".jpg";
     var image3 = document.querySelectorAll("img")[2];
     image3.setAttribute("src", recipeImgSide);
-   
-    //show recipe title
-//    document.querySelectorAll(".card-title")[2].innerHTML = anotherSide;
     
     //show recipe directions
     var recipeDirectionsMain = document.querySelectorAll(".card-text")[2].innerHTML = recipeDict[anotherSide];
@@ -361,15 +404,13 @@ function randomDessert(sweets){
     var image4 = document.querySelectorAll("img")[3];
     image4.setAttribute("src", recipeImgSweet);
     
-    //show recipe title
-//    document.querySelectorAll(".card-title")[3].innerHTML = chosenDessert;
-    
     //show recipe directions
     var recipeDirectionsMain = document.querySelectorAll(".card-text")[3].innerHTML = recipeDict[chosenDessert];
     
     //show ingredients
     var groceryDirectionsMain = document.querySelectorAll(".card-list")[3].innerHTML = groceryDict[chosenDessert];
     
+
     
 };
 
@@ -389,9 +430,6 @@ function NewSweet()
     var recipeImgSweet = "img/" + anotherSweet + ".jpg"; 
     var image4 = document.querySelectorAll("img")[3];
     image4.setAttribute("src", recipeImgSweet);
-    
-    //show recipe title
-//    document.querySelectorAll(".card-title")[3].innerHTML = anotherSweet;
     
      //show recipe directions
     var recipeDirectionsMain = document.querySelectorAll(".card-text")[3].innerHTML = recipeDict[anotherSweet];
@@ -419,18 +457,19 @@ document.querySelector(".sweets").addEventListener("click", addToGroceryList);
 
 //GROCERY LIST
     
-//    var listItems = document.querySel
     
-    
-    function addToGroceryList(){
+function addToGroceryList(){
     alert("added to the list");
     
-    // create line items with each item from the recipe list
+    // add items on screen to the list
+    
 }
 
     //push items into list as li
 
+
     //allow for item removal
+
 
     //allow the items to be sent to notes/email/messages or something to generate the list
 
