@@ -19,7 +19,7 @@
 /*PAGE IN 4 PARTS*/
 
 .partA .card img,.partB .card img, .partC .card img,.partD .card img, .partA, .partB, .partC,.partD, .partA .card,.partB .card, .partC .card,.partD .card{
-      width: 25vw;
+      flex: 25%;
     float: left;  
 }
 
@@ -147,8 +147,7 @@
     }
     
     .partA, .partB, .partC, .partD, .partA .card img,.partB .card img, .partC .card img,.partD .card img, .partA .card,.partB .card, .partC .card,.partD .card {
-        width: 100vw;
-        min-width: 100vw;
+        flex: 100%;
         height: auto;
         font-size: 1.3rem;
     }
