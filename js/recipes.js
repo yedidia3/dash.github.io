@@ -1,11 +1,11 @@
 //DISHES
-var main = ["Spicy Salmon Onigiri", "Shakshuka", "Pondu and Rice", "TLT", "Vegan American Breakfast", "Gnocchi in red sauce", "Japanese Style Macro Bowl", "Teriyaki Bao", "Mediterranean Style Salad", "Kale Salad", "Curry Salad", "Tacos de Alambre", "Tex Mex Bowl", "Fried Rice", "Vegan Ramen", "Avocado Toast and Eqqs", "Crispy Tofu, Cucumber and Edamame", "Guac, Eqqs, Salsa and Chips", "Black Bean Burger", "Plant Meat Burger", "Pesto Rotini", "Sweet Potato Hash", "Palak Paneer", "Noodle Stir Fry", "Sushi Bake", "Nachos", "Burmese Tea Leaf Salad", "Gyros", "Congolese Shrimp"];
+var main = ["Spicy Salmon Onigiri", "Shakshuka", "Pondu and Rice", "TLT", "Vegan American Breakfast", "Gnocchi in red sauce", "Japanese Style Bento", "Teriyaki Bao", "Mediterranean Style Salad", "Kale Salad", "Curry Salad", "Tacos de Alambre", "Tex Mex Salad Bowl", "Fried Rice", "Vegan Ramen", "Avocado Toast and Eqqs", "Crispy Tofu, Cucumber and Edamame", "Guac, Eqqs, Salsa and Chips", "Black Bean Burger", "Plant Meat Burger", "Pesto Rotini", "Sweet Potato Hash", "Palak Paneer", "Noodle Stir Fry", "Sushi Bake", "Nachos", "Burmese Tea Leaf Salad", "Gyros", "Congolese Shrimp", "Oyster Mushroom Nuggets"];
 
 var sauce = ["Congolese Tomato Sauce", "Pili Pili", "Hummus", "Tahini Herb Sauce", "Ginger Sauce", "Orange Sauce", "Chipotle Salsa", "Avocado Poppy Seed Dressing", "Italian Tomato Sauce", "West Indian Curry", "Japanese Curry", "White Bean Dip", "Cashew Nacho Cheese", "Walnut Pesto", "Spicy Mayo", "Miso Tahini Butter", "Guacamole", "Ginger Jalapeno Sauce"];
 
 var side = ["French Fries", "Burmese Mango Salad", "Plantains", "Tortilla Chips", "Steamed Broccoli", "Seaweed Salad", "Baked Chickpeas", "Kabocha Squash", "Grilled Veggies", "Pickled Beets", "Tater Tots", "Roasted Veggies", "Congolese Spinach", "Basmati Rice", "Cucumbers", "Pinapple Fried Rice"];
 
-var sweets = ["Lemon Poppy Seed Balls", "Brownies", "Boba Ice Cream Bar", "Apple and Peanut Butter", "Apple Pie Oatmeal", "Red Bean Mochi", "Batida de Coco", "Cinnamon Sweet Potatoes", "Granola, Strawberries and Greek Yogurt", "Bananas", "Sunflower Butter Ice Cream", "Honey Dew, Kiwis, Asian Pears, Plumcots", "Cashew Caramel Ice Cream", "Galettes", "Peach Cobbler", "Peanut Butter Protein Waffles"];
+var sweets = ["Lemon Poppy Seed Balls", "Brownies", "Boba Ice Cream Bar", "Apple and Peanut Butter", "Apple Pie Oatmeal", "Red Bean Mochi", "Batida de Coco", "Cinnamon Sweet Potatoes", "Granola, Strawberries and Greek Yogurt", "Bananas", "Sunflower Butter Ice Cream", "Honey Dew, Kiwis, Asian Pears, Plumcots", "Cashew Caramel Ice Cream", "Galettes", "Peach Cobbler", "Peanut Butter Protein Waffles", "Green Tea Ice Cream"];
 
 //RECIPES
 
@@ -16,9 +16,10 @@ var recipeDict = {
     "TLT": "Pan fry the chopped tempeh in soy sauce and black pepper. Toast the bread adn layer into a beautiful sandwich.", 
     "Vegan American Breakfast": "Cook the eqqs, vegan meat and potatoes.",
     "Gnocchi in Red Sauce": "Pan fry the chopped and prepared veggies. Add in red sauce and pesto. Cook gnocchi until chewy, not squishy.", 
-    "Japanese Style Macro Bowl": "", 
+    "Japanese Style Bento": "", 
     "Teriyaki Bao": "Chop veggies. Prepare the yeast. Stir fry veggies while the yeast rises. Wrap veggies in dough balls and steam on medium heat for 8 minutes.", 
-    "Mediterranean Style Salad": "", 
+    "Mediterranean Style Salad": "",
+    "Oyster Mushroom Nuggets": "",
     "Kale Salad": "Season tempeh with soy sauce, black pepper, and salt and bake at 400 degrees. Prepare and chop veggies. Allow tempeh to cool and combine. Serve salad cold.", 
     "Curry Salad": "Prepare and chop veggies. Cook chickpeas in west indian curry. Fry or scramble just egg. Let hot items cool and combine to serve salad room temp.", 
     "Tacos de Alambre": "Stir fry the bacon and add the veggies. Served on a corn tortilla.", 
@@ -61,8 +62,8 @@ var recipeDict = {
     "Palak Paneer": "Blanch the spinach for 2 minutes then drain and dry. Prep onion, garlic, ginger, tomatoe, serrano pepper for food processor. Boil Tofu for 2 minutes. Add veggies, spinach and cashews to food processor and blend until smooth. Cook spices, bay leaf, onion, garlic on stove then pour in spinach sauce. Coat tofu cubes in, add lemon or lime juice, and cook for 2 minutes.",
     "Pineapple Fried Rice": "1/4 cup pineapple, 1/2 cup frozen peas, 1/4 cup diced onion, 2 tbsp olive oil, 2 tsp sesame oil, 1/2 tsp ginger powder, 1/4 cup green onion, 3/4 short grain rice, 1.5 vegetable broth, 1 egg",
     "Noodle Stir Fry": "",
-    "Cilantro Lime Rice": "1 tsp olive oil, 1/4 cup chopped onion, 1 clove garlic, 3/4 long grain jasmine rice, 1.25 cup water, 1/8 tsp salt, 1 tbsp freshly squeezed lime juice, 1/8 cup chopped cilantro"
-    
+    "Cilantro Lime Rice": "1 tsp olive oil, 1/4 cup chopped onion, 1 clove garlic, 3/4 long grain jasmine rice, 1.25 cup water, 1/8 tsp salt, 1 tbsp freshly squeezed lime juice, 1/8 cup chopped cilantro",
+    "Green Tea Ice Cream": ""
     
 };
 
@@ -72,14 +73,15 @@ var groceryDict = {
     "Brownies": ["½ cup melted vegan butter - hot","1½ cup granulated cane sugar", "⅓ cup non-dairy milk", "3 teaspoons vanilla extract", "1 cup all-purpose flour", "¾ cup cocoa powder", "¾ teaspoon baking powder", "¼ teaspoon salt", "1 cup vegan chocolate chips"],
     "Teriyaki Bao": ["140 g (5 oz) all-purpose flour", "50 g (1.5 oz) corn starch", "45 g (1.5 oz) powdered sugar", "4 g (1.5 teaspoons) active dry yeast or instant yeast", "80 ml lukewarm water", "1 tablespoon oil", "1 teaspoon baking powder", "1 teaspoon cold water"],
     "Kabocha Squash": ["1 kabocha squash"],
-    "Bananas" : ["4 bananas"], 
+    "Bananas" : ["3 bananas"], 
+    "Oyster Mushroom Nuggets": ["oyster mushroom", "corn starch", "black pepper", "mushroom umami"],
     "Spicy Salmon Onigiri": ["Kewpie Mayo", "Premium Dark Soy Sauce", "Sriracha", "Kokuho Rose Sushi Rice", "Black Pepper", "Vegeta", "Nori Komi Furikake Rice Seasoning", "Salmon", "Green Onion", "Avocado oil", "Water", "Seaweed"],
     "Shakshuka": ["1 large onion", "1 red bell pepper", "3 garlic cloves", "cumin", "paprika", "cayenne", "1 28-ounce can of whole plum tomatoes", "salt", "black pepper", "olive oil"], 
     "Pondu and Rice": ["2 cases of frozen cassava leaves", "palm oil"], 
     "TLT": ["tempeh", "1 tomato", "1 avocado", "sandwich bread", "lettuce"], 
     "Vegan American Breakfast": ["Just Egg", "Veggie Breakfast Sausage", "tater tots"],
     "Gnocchi in red sauce": [], 
-    "Japanese Style Macro Bowl": [], 
+    "Japanese Style Bento": [], 
     "Mediterranean Style Salad": ["chickpeas", "kale", "dried cranberries", "hummus", "1 cucumber"], 
     "Kale Salad": ["curly kale", "1 tomato", "tempeh", "1 avocado", "soy sauce", "poppy seed dressing"], 
     "Curry Salad": ["Just egg", "West Indian Curry", "1 Sweet potato", "1/2 a bag of Spinach", "1 can of Chickpeas", "Black Pepper", "Salt", "Avocado Oil"], 
@@ -125,14 +127,14 @@ var groceryDict = {
     "Burmese Mango Salad": [], 
     "Plantains": [" 2 brown plantains", "black pepper"], 
     "Tortilla Chips": [], 
-    "Steamed Broccoli": [], 
-    "Seaweed Salad": [], 
+    "Steamed Broccoli": ["broccoli"], 
+    "Seaweed Salad": ["seaweed"], 
     "Grilled Veggies": [], 
     "Pickled Beets": ["1/2 a lemon", "2 beets"], 
     "Roasted Veggies": [], 
-    "Congolese Spinach": [], 
-    "Basmati Rice": [], 
-    "Cucumbers": [], 
+    "Congolese Spinach": ["spinach"], 
+    "Basmati Rice": ["basmati rice"], 
+    "Cucumbers": ["cucumbers"], 
     "Pinapple Fried Rice": ["pineapple", "jasmine rice", "soy sauce"],
     "Congolese Tomato Sauce": ["1 bunch of green onion", "tomato paste", "toamtoes", "black pepper", "salt", "vegeta all purpose seasoning"], 
     "Pili Pili": ["8 orange habaneros", "1 lemon", "vegeta all purpose seasoning", "black pepper"], 
@@ -151,7 +153,8 @@ var groceryDict = {
     "Spicy Mayo": ["vegan mayo", "sriracha"], 
     "Miso Tahini Butter": [], 
     "Guacamole": ["3 avocados", "1 lime", "1 tomoato", "1/4 onion"], 
-    "Ginger Jalapeno Sauce": []
+    "Ginger Jalapeno Sauce": [],
+    "Green Tea Ice Cream": ["cashews", "matcha powder", "coconut cream"]
 }
     
 //GROCERY ARRAY 
