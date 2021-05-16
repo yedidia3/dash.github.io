@@ -3,7 +3,7 @@ var main = ["Spicy Salmon Onigiri", "Shakshuka", "Pondu and Rice", "TLT", "Vegan
 
 var sauce = ["Congolese Tomato Sauce", "Pili Pili", "Hummus", "Tahini Herb Sauce", "Ginger Sauce", "Orange Sauce", "Chipotle Salsa", "Avocado Poppy Seed Dressing", "Italian Tomato Sauce", "West Indian Curry", "Japanese Curry", "White Bean Dip", "Cashew Nacho Cheese", "Walnut Pesto", "Spicy Mayo", "Miso Tahini Butter", "Guacamole", "Ginger Jalapeno Sauce"];
 
-var side = ["French Fries", "Burmese Mango Salad", "Plantains", "Tortilla Chips", "Steamed Broccoli", "Seaweed Salad", "Baked Chickpeas", "Kabocha Squash", "Grilled Veggies", "Pickled Beets", "Tater Tots", "Roasted Veggies", "Mushroom Lentil Mix", "Congolese Spinach", "Basmati Rice", "Cucumbers", "Pinapple Fried Rice", "Thai Coconut Rice"];
+var side = ["French Fries", "Burmese Mango Salad", "Plantains", "Tortilla Chips", "Steamed Broccoli", "Seaweed Salad", "Baked Chickpeas", "Kabocha Squash", "Grilled Veggies", "Pickled Beets", "Tater Tots", "Roasted Veggies", "Congolese Spinach", "Basmati Rice", "Cucumbers", "Pinapple Fried Rice", "Thai Coconut Rice"];
 
 var sweets = ["Lemon Poppy Seed Balls", "Brownies", "Boba Ice Cream Bar", "Honey Dew", "Asian Pears", "Apple and Peanut Butter", "Apple Pie Oatmeal", "Plumcots", "Red Bean Mochi", "Batida de Coco", "Cinnamon Sweet Potatoes", "Granola, Strawberries and Greek Yogurt", "Bananas", "Sunflower Butter Ice Cream", "Kiwis", "Cashew Caramel Ice Cream", "Galettes", "Peach Cobbler", "Peanut Butter Protein Waffles", "Chocolate Rice Cooker Cake"];
 
@@ -45,8 +45,8 @@ var recipeDict = {
     "Pickled Beets": "Boil beets for 10 minutes. Strain and sqeeze lemon juice and salt on the beets. Serve cold.", 
     "Tater Tots": "Air fry the tots for 18 minutes.",
     "Lemon Poppy Seed Balls": "", 
-    "Black Bean Brownies": "Rinse and mash one can of black beans.", 
-    "Boba Ice Cream Bar": "1 box of ice creams!", 
+    "Brownies": "Preheat the oven to 350°F. First, line an 8x8 baking pan with parchment paper. Refer to the photos above or the notes below for the best way to do this. Then rub some softened butter on top of the parchment paper. In a large bowl, whisk together the hot melted butter and sugar. Then, whisk in the milk and vanilla. In a separate bowl, combine the dry ingredients: flour, cocoa powder, baking powder, and salt. Mix the dry ingredients into the bowl with the butter and sugar mixture until well combined. Fold in the chocolate chips. Spread the batter evenly into the baking pan. Bake for 25-30 minutes, or until a fork comes out relatively clean. Let cool for about 30 minutes in the pan. Then grab the parchment paper handles and pull the brownies out. Set on a wire rack to finish cooling completely before cutting. For clean-cut brownies, run a clean knife under hot water in between each slice. Store leftover brownies in an airtight container at room temperature for up to 5 days.", 
+    "Boba Ice Cream Bar": "you just eat it 😋", 
     "Honey Dew": "Chop that melon!", 
     "Asian Pears": "2 pears", 
     "Apple and Peanut Butter": "4 apples", 
@@ -54,7 +54,7 @@ var recipeDict = {
     "Plumcots": "One case from Trader Joe's", 
     "Red Bean Mochi": "", 
     "Batida de Coco": "", 
-    "Cinnamon Sweet Potatoes": "Bake at 450 degrees fahrenheit", 
+    "Cinnamon Sweet Potatoes": "Chop sweet potato into coin shaped pieces. Arrange on a baking pan and drizzle oil, honey, smoked paprika, black pepper, and salt. Bake at 450˚F", 
     "Granola and Greek Yogurt": "", 
     "Bananas" : "4 bananas", 
     "Sunflower Butter Ice Cream": "1 pint", 
@@ -62,7 +62,7 @@ var recipeDict = {
     "Cashew Caramel Ice Cream": "1 pint",
     "Palak Paneer": "Blanch the spinach for 2 minutes then drain and dry. Prep onion, garlic, ginger, tomatoe, serrano pepper for food processor. Boil Tofu for 2 minutes. Add veggies, spinach and cashews to food processor and blend until smooth. Cook spices, bay leaf, onion, garlic on stove then pour in spinach sauce. Coat tofu cubes in, add lemon or lime juice, and cook for 2 minutes.",
     "Pineapple Fried Rice": "1/4 cup pineapple, 1/2 cup frozen peas, 1/4 cup diced onion, 2 tbsp olive oil, 2 tsp sesame oil, 1/2 tsp ginger powder, 1/4 cup green onion, 3/4 short grain rice, 1.5 vegetable broth, 1 egg",
-    "Thai Coconut Rice": "3/4 cup jasmine rice, 1/2 cup coconut cream, 1/ cup water, 1/4 tsp sea salt, 1/4 tsp coconut oil",
+    "Noodle Stir Fry": "",
     "Rice Cooker Chocolate Cake": "1/2 cup cane sugar, 6 tbsp butter, 1 egg, 1 tsp vanilla extract, 1/2 tsp baking powder, 1 cup flour, 1/4 cup cocoa powder, 1/2 cup oat milk",
     "Cilantro Lime Rice": "1 tsp olive oil, 1/4 cup chopped onion, 1 clove garlic, 3/4 long grain jasmine rice, 1.25 cup water, 1/8 tsp salt, 1 tbsp freshly squeezed lime juice, 1/8 cup chopped cilantro"
     
@@ -70,12 +70,133 @@ var recipeDict = {
 };
 
 
+//INGREDIENTS
+var groceryDict = {
+    "Brownies": ["½ cup melted vegan butter - hot","1½ cup granulated cane sugar", "⅓ cup non-dairy milk", "3 teaspoons vanilla extract", "1 cup all-purpose flour", "¾ cup cocoa powder", "¾ teaspoon baking powder", "¼ teaspoon salt", "1 cup vegan chocolate chips"],
+    "Teriyaki Bao": ["140 g (5 oz) all-purpose flour", "50 g (1.5 oz) corn starch", "45 g (1.5 oz) powdered sugar", "4 g (1.5 teaspoons) active dry yeast or instant yeast", "80 ml lukewarm water", "1 tablespoon oil", "1 teaspoon baking powder", "1 teaspoon cold water"],
+    "Kabocha Squash": ["1 kabocha squash"],
+    "Bananas" : ["4 bananas"], 
+    "Spicy Salmon Onigiri": ["Kewpie Mayo", "Premium Dark Soy Sauce", "Sriracha", "Kokuho Rose Sushi Rice", "Black Pepper", "Vegeta", "Nori Komi Furikake Rice Seasoning", "Salmon", "Green Onion", "Avocado oil", "Water", "Seaweed"],
+    "Shakshuka": ["1 large onion", "1 red bell pepper", "3 garlic cloves", "cumin", "paprika", "cayenne", "1 28-ounce can of whole plum tomatoes", "salt", "black pepper", "olive oil"], 
+    "Pondu and Rice": [], 
+    "TLT": ["tempeh", "1 tomato", "1 avocado", "sandwich bread", "lettuce"], 
+    "Vegan American Breakfast": ["Just Egg", "Veggie Breakfast Sausage", "tater tots"],
+    "Gnocchi in red sauce": [], 
+    "Japanese Style Macro Bowl": [], 
+    "Mediterranean Style Salad": [], 
+    "Kale Salad": ["curly kale", "1 tomato", "tempeh", "1 avocado", "soy sauce", "poppy seed dressing"], 
+    "Curry Salad": ["Just egg", "West Indian Curry", "1 Sweet potato", "1/2 a bag of Spinach", "1 can of Chickpeas", "Black Pepper", "Salt", "Avocado Oil"], 
+    "Tacos de Alambre": ["mushrooms", "1 green pepper", "1 orange pepper", "1 onion", "black pepper", "mushroom umami", "cumin", "vegan bacon", "gucamole", "nacho cheese"], 
+    "Tex Mex Bowl": ["1 can of black beans", "pickled jalapenos"], 
+    "Fried Rice": ["jasmine rice", "soy sauce", "Just egg", "black pepper", "1 carrot", "1/2 cup of peas"], 
+    "Vegan Ramen": ["seaweed", "miso paste", "sriracha", "1 egg", "ramen noodles"], 
+    "Avocado Toast and Eqqs": [], 
+    "Crispy Tofu, Cucumber and Edamame": [],
+    "Guac, Eqqs, Salsa and Chips": ["gucamole", "just egg", "tortilla chips", "chipotle salsa"], 
+    "Black Bean Burger": [], 
+    "Plant Meat Burger": ["Beyond burger", "lettuce", "mushrooms", "1/2 an onion", "black pepper", "soy sauce", "gouda cheez", "pickles"], 
+    "Pesto Rotini": [], 
+    "Sweet Potato Hash": [], 
+    "Palak Paneer": ["spinach", "cashews", "garam masala", ""], 
+    "Noodle Stir Fry": [], 
+    "Sushi Bake": [], 
+    "Nachos": ["nacho cheez", "1 can of black beans", "gucamole", "pickled jalapenos", "tortilla chips"], 
+    "Burmese Tea Leaf Salad": [], 
+    "Gyros": ["tomato", "onion"], 
+    "Congolese Shrimp": ["frozen uncooked shrimp", "palm oil", "all purpose seasoning"],
+    "Kiwis" : ["3 kiwis"], 
+    "Pineapple Fried Rice": ["Cook brown rice in the rice cooker with vegetable broth. While the rice is cooking, saute the peas, carrots, and onion on the stove with 1 tbsp olive oil and 1 tsp sesame oil until onions are translucent. Add pinapple, egg, and green onion. When rice is finished cooking, heat the remaining tbsp of olive oil and 1 sp of sesame oil in pan and add rice. Stir for about 1 minute before adding the other ingredients. Cook for 2-3 minutes and serve immediately."],
+    "Cilantro Lime Rice": ["Add olive oil and choppen onion to the rice cooker then switch on. When the onion begins to soften, add the garlic, rice, water, and salt. Cook until all the water is absorbed. Fluff rice with a fork. Stir in lime juice and cilantro and serve immediately"],
+    "Sunflower Butter Ice Cream" : ["1 pint of Sunflower Butter Ice Cream"], 
+    "Batida de Coco": ["Coconut milk", "Ice", "Cachaça (rum)", "Sweetened condensed milk", "Lime juice"],
+    "Cashew Caramel Ice Cream": ["1 pint of So Delicious Cashew Caramel Ice Cream"],
+    "Baked Chickpeas": ["1 can of chickpeas", "smoked paprika", "salt", "black pepper", "cumin", "italian spices"],
+    "Tater Tots": ["1 pack of tater tots"],
+    "Gnocchi in Red Sauce": ["gnocchi", "pesto", "veggie sausage", "sun dried tomatoes", "spinach", "mushrooms"],
+    "Black Bean Burger": ["1 avocado", "pickled jalapenos", "2 cans of black beans"], 
+    "French Fries": ["french fries"], 
+    "Boba Ice Cream Bar": ["1 box of Brown Sugar Boba Ice Cream Bars"], 
+    "Honey Dew": [], 
+    "Asian Pears": [], 
+    "Apple and Peanut Butter": [], 
+    "Apple Pie Oatmeal": [], 
+    "Plumcots": [], 
+    "Red Bean Mochi": [], 
+    "Cinnamon Sweet Potatoes": [], 
+    "Granola, Strawberries and Greek Yogurt": [],
+    "Sunflower Butter Ice Cream": [], 
+    "Kiwis": [], 
+    "Cashew Caramel Ice Cream": [], 
+    "Galettes": [], 
+    "Peach Cobbler": [], 
+    "Peanut Butter Protein Waffles": [],
+    "Chocolate Rice Cooker Cake": [],
+    "French Fries": [], 
+    "Burmese Mango Salad": [], 
+    "Plantains": [], 
+    "Tortilla Chips": [], 
+    "Steamed Broccoli": [], 
+    "Seaweed Salad": [], 
+    "Baked Chickpeas": [], 
+    "Kabocha Squash": [], 
+    "Grilled Veggies": [], 
+    "Pickled Beets": [], 
+    "Tater Tots": [], 
+    "Roasted Veggies": [], 
+    "Congolese Spinach": [], 
+    "Basmati Rice": [], 
+    "Cucumbers": [], 
+    "Pinapple Fried Rice": [],
+    "Congolese Tomato Sauce": [], 
+    "Pili Pili": [], 
+    "Hummus": [], 
+    "Tahini Herb Sauce": [], 
+    "Ginger Sauce": [], 
+    "Orange Sauce": [], 
+    "Chipotle Salsa": [], 
+    "Avocado Poppy Seed Dressing": ["1 avocado", "poppy seed dressing"], 
+    "Italian Tomato Sauce": [], 
+    "West Indian Curry": [], 
+    "Japanese Curry": ["japanese curry paste block", "miso paste"], 
+    "White Bean Dip": [], 
+    "Cashew Nacho Cheese": [], 
+    "Walnut Pesto": [], 
+    "Spicy Mayo": ["vegan mayo", "sriracha"], 
+    "Miso Tahini Butter": [], 
+    "Guacamole": [], 
+    "Ginger Jalapeno Sauce": []
+}
 
+
+//    {"Shakshuka": []},
+//    {"Pondu, Rice, and Pili Pili": ["2 cases of frozen cassava leaves", "palm oil"]
+//    "Japanese Style Macro Bowl": [""], 
+//    "Teriyaki Bao": [""], 
+//    "Mediterranean Style Salad": [""],  
+//    "Ginger Tofu": ["Firm Tofu", "Corn starch", "Black pepper", "Salt", "Soy Sauce", "Poultry Seasoning", "Garlic"],  
+//    "Avocado Toast and Eqqs": ["bread", "1 avocado", "just egg"], 
+//    "Orange Tofu, Cucumber and Edamame": ["1 orange", "firm tofu", "black pepper", "soy sauce"], 
+//    "Plantains with Ginger Dip": ["2 plantains"], 
+//    "Guac and Chips": ["avocado", "1 lime", "1/2 a red onion", "1 tomato"], 
+//    "Steamed Broccoli": ["1 head of broccoli"], 
+//    "Seaweed Salad": [""],  
+//    "Grilled Veggies": [""], 
+//    "Pickled Beets": ["1/2 a lemon", "2 beets"], 
+//    "Lemon Poppy Seed Balls": [""], 
+//    "Apple and Peanut Butter": ["3 apples", "peanut butter"], 
+//    "Oatmeal and Bananas": ["1/2 a banana", "Honey", "Oats", "Plant milk", "Peanut butter"], 
+//    "Plumcots": ["1 case of plumcots from Trader Joe's"], 
+//    "Red Bean Mochi": [""], 
+//    "Cinnamon Sweet Potatoes": ["2 sweet potatoes", "cinnamon", "nutmeg", "honey", "salt", "black pepper"],  
+//    "Rice Cooker Chocolate Cake": ["1 pint of So Delicious Cashew Caramel Ice Cream"],
+
+    
 
 
 //FUNCTIONS -------------------------------------
 //ENTREES
 function randomEntree(main){
+    
     
     var mainLength = main.length;
     var randomNumber = Math.floor(Math.random() * mainLength);
@@ -95,9 +216,17 @@ function randomEntree(main){
     //show recipe directions
     var recipeDirectionsMain = document.querySelectorAll(".card-text")[0].innerHTML = recipeDict[chosenMain];
     
+    //show ingredient list
+    var groceryDirectionsMain = document.querySelectorAll(".card-list")[0].innerHTML = groceryDict[chosenMain];
+    
+    // create li
+//    const newTodo = document.createElement("li");
+//    newTodo.innerText = todoInput.value;
+//    newTodo.classList.add("todo-item");
+//    todoDiv.appendChild(newTodo);
+//    
     //show ingredients in grocery list on click
-    
-    
+     
     
 };
 
@@ -121,6 +250,9 @@ function NewEntree()
     
     //show recipe directions
     var recipeDirectionsMain = document.querySelectorAll(".card-text")[0].innerHTML = recipeDict[anotherEntree];
+    
+    //show ingredients
+    var groceryDirectionsMain = document.querySelectorAll(".card-list")[0].innerHTML = groceryDict[anotherEntree];
 }
 
 //------------/
@@ -137,11 +269,17 @@ function randomSauce(sauce){
     
     //show image for recipe card
     var recipeImgSauce = "img/" + chosenSauce + ".jpg";
-    var image4 = document.querySelectorAll("img")[1];
-    image4.setAttribute("src", recipeImgSauce);
+    var image2 = document.querySelectorAll("img")[1];
+    image2.setAttribute("src", recipeImgSauce);
         
+    //show recipe title
+    document.querySelectorAll(".card-title")[1].innerHTML = chosenSauce;
+    
     //show recipe directions
-    var recipeDirectionsSauce = document.querySelector(".recipe-directions-sauce");
+    var recipeDirectionsSauce = document.querySelectorAll(".card-text")[1].innerHTML = recipeDict[chosenSauce];
+    
+    //show ingredients
+//    var groceryDirectionsSauce = document.querySelectorAll(".card-list")[1].innerHTML = groceryDict[chosenSauce];
     
 };
 
@@ -153,6 +291,20 @@ function NewSauce()
     
    //show new side when button is pressed
     document.getElementById("message2").innerHTML=random;
+    
+     //new recipe photo based on choice
+    var recipeImgSide = "img/" + anotherSauce + ".jpg";
+    var image2 = document.querySelectorAll("img")[1];
+    image2.setAttribute("src", recipeImgSauce);
+   
+    //show recipe title
+    document.querySelectorAll(".card-title")[1].innerHTML = anotherSauce;
+    
+    //show recipe directions
+    var recipeDirectionsMain = document.querySelectorAll(".card-text")[1].innerHTML = recipeDict[anotherSauce];
+    
+    //show ingredients
+//    var groceryDirectionsMain = document.querySelectorAll(".card-list")[1].innerHTML = groceryDict[anotherSauce];
 }
 
 //------------/
@@ -169,17 +321,20 @@ function randomSide(side){
     
     //show image for recipe card
     var recipeImgSide = "img/" + chosenSide + ".jpg";
-    var image2 = document.querySelectorAll("img")[1];
-    image2.setAttribute("src", recipeImgSide);
+    var image3 = document.querySelectorAll("img")[2];
+    image3.setAttribute("src", recipeImgSide);
         
     //show recipe directions
     var recipeDirectionsSide = document.querySelector(".recipe-directions-side");
         
     //show recipe title
-    document.querySelectorAll(".card-title")[1].innerHTML = chosenSide;
+    document.querySelectorAll(".card-title")[2].innerHTML = chosenSide;
     
     //show recipe directions
-    var recipeDirectionsMain = document.querySelectorAll(".card-text")[1].innerHTML = recipeDict[chosenSide];
+    var recipeDirectionsMain = document.querySelectorAll(".card-text")[2].innerHTML = recipeDict[chosenSide];
+    
+    //show ingredients
+//    var groceryDirectionsMain = document.querySelectorAll(".card-list")[2].innerHTML = groceryDict[chosenSide];
     
     //show ingredients in grocery list on click
         //maybe I need to push items into an array that places each item as a li
@@ -197,14 +352,17 @@ function NewSide()
     
     //new recipe photo based on choice
     var recipeImgSide = "img/" + anotherSide + ".jpg";
-    var image2 = document.querySelectorAll("img")[1];
-    image2.setAttribute("src", recipeImgSide);
+    var image3 = document.querySelectorAll("img")[2];
+    image3.setAttribute("src", recipeImgSide);
    
     //show recipe title
-    document.querySelectorAll(".card-title")[1].innerHTML = anotherSide;
+    document.querySelectorAll(".card-title")[2].innerHTML = anotherSide;
     
     //show recipe directions
-    var recipeDirectionsMain = document.querySelectorAll(".card-text")[1].innerHTML = recipeDict[anotherSide];
+    var recipeDirectionsMain = document.querySelectorAll(".card-text")[2].innerHTML = recipeDict[anotherSide];
+    
+    //show ingredients
+//    var groceryDirectionsMain = document.querySelectorAll(".card-list")[2].innerHTML = groceryDict[anotherSide];
 }
 
 //------------/
@@ -220,17 +378,17 @@ function randomDessert(sweets){
     
     //show image for recipe card
     var recipeImgSweet = "img/" + chosenDessert + ".jpg"; 
-    var image3 = document.querySelectorAll("img")[2];
-    image3.setAttribute("src", recipeImgSweet);
+    var image4 = document.querySelectorAll("img")[3];
+    image4.setAttribute("src", recipeImgSweet);
     
     //show recipe title
-    document.querySelectorAll(".card-title")[2].innerHTML = chosenDessert;
+    document.querySelectorAll(".card-title")[3].innerHTML = chosenDessert;
     
     //show recipe directions
-    var recipeDirectionsMain = document.querySelectorAll(".card-text")[2].innerHTML = recipeDict[chosenDessert];
+    var recipeDirectionsMain = document.querySelectorAll(".card-text")[3].innerHTML = recipeDict[chosenDessert];
     
     // show ingredients in the grocery list
-    var recipeDirectionsSweet = document.querySelector(".recipe-directions-sweet");
+//    var recipeDirectionsSweet = document.querySelector(".recipe-directions-sweet");
     
     
 };
@@ -249,14 +407,14 @@ function NewSweet()
     
     //show image for recipe card
     var recipeImgSweet = "img/" + anotherSweet + ".jpg"; 
-    var image3 = document.querySelectorAll("img")[2];
-    image3.setAttribute("src", recipeImgSweet);
+    var image4 = document.querySelectorAll("img")[3];
+    image4.setAttribute("src", recipeImgSweet);
     
     //show recipe title
-    document.querySelectorAll(".card-title")[2].innerHTML = anotherSweet;
+    document.querySelectorAll(".card-title")[3].innerHTML = anotherSweet;
     
      //show recipe directions
-    var recipeDirectionsMain = document.querySelectorAll(".card-text")[2].innerHTML = recipeDict[anotherSweet];
+    var recipeDirectionsMain = document.querySelectorAll(".card-text")[3].innerHTML = recipeDict[anotherSweet];
 }
 
 //-------------------------------------------------
@@ -266,6 +424,8 @@ function NewSweet()
 //GROCERIES
 
 document.querySelector(".entree").addEventListener("click", addToGroceryList);
+
+document.querySelector(".sauce").addEventListener("click", addToGroceryList);
 
 document.querySelector(".side").addEventListener("click", addToGroceryList);
 
@@ -291,69 +451,3 @@ document.querySelector(".sweets").addEventListener("click", addToGroceryList);
 
     //allow the items to be sent to notes/email/messages or something to generate the list
 
-//INGREDIENTS
-//
-//var ingredientDict = [
-//    {"Spicy Salmon Onigiri": ["Kewpie Mayo", "Premium Dark Soy Sauce", "Sriracha", "Kokuho Rose Sushi Rice", "Black Pepper", "Vegeta", "Nori Komi Furikake Rice Seasoning", "Salmon", "Green Onion", "Avocado oil", "Water", "Seaweed"]},
-//    {"Shakshuka": ["1 large onion", "1 red bell pepper", "3 garlic cloves", "cumin", "paprika", "cayenne", "1 28-ounce can of whole plum tomatoes", "salt" "black pepper", "olive oil"]},
-//    {"Pondu, Rice, and Pili Pili": ["2 cases of frozen cassava leaves", "palm oil"]}
-//    
-//    ];
-//    
-    
-    
-    
-    
-//    "TLT": ["tempeh", "1 tomato", "1 avocado", "sandwich bread", "lettuce"], 
-//    "Vegan American Breakfast": ["Just Egg", "Veggie Breakfast Sausage", "tater tots"],
-//    "Gnocchi in Red Sauce": ["gnocchi", "pesto", "veggie sausage", "sun dried tomatoes", "spinach", "mushrooms"], 
-//    "Japanese Style Macro Bowl": [""], 
-//    "Teriyaki Bao": [""], 
-//    "Mediterranean Style Salad": [""], 
-//    "Kale Salad": [""], 
-//    "Ginger Tofu": ["Firm Tofu", "Corn starch", "Black pepper", "Salt", "Soy Sauce", "Poultry Seasoning", "Garlic"], 
-//    "Curry Salad": ["Just egg", "West Indian Curry", "1 Sweet potato", "1/2 a bag of Spinach", "1 can of Chickpeas", "Black Pepper", "Salt", "Avocado Oil"], 
-//    "Tacos": [""], 
-//    "Tex Mex Bowl": [""], 
-//    "Fried Rice": [""], 
-//    "Veggie Stir Fry": [""], 
-//    "Vegan Ramen": [""], 
-//    "2 Sushi Rolls": ["sushi rice"], 
-//    "Avocado Toast and Eqqs": ["bread", "1 avocado", "just egg"], 
-//    "Orange Tofu, Cucumber and Edamame": ["1 orange", "firm tofu", "black pepper", "soy sauce"], 
-//    "Guac, Eqqs, Salsa and Chips": ["Chipotle salsa"], 
-//    "Black Bean Burger": ["1 avocado", "pickles jalapenos", ""], 
-//    "Plant Meat Burger": ["Beyond burger", "lettuce", "mushrooms", "1/2 an onion", "black pepper", "soy sauce", "gouda cheez", "pickles"],
-//    "French Fries": ["french fries"], 
-//    "Burmese Mango Salad": [""], 
-//    "Cheesy Popcorn": ["cheesey smart popcorn"], 
-//    "Plantains with Ginger Dip": ["2 plantains"], 
-//    "Guac and Chips": ["avocado", "1 lime", "1/2 a red onion", "1 tomato"], 
-//    "Steamed Broccoli": ["1 head of broccoli"], 
-//    "Seaweed Salad": [""], 
-//    "Baked Chickpeas": ["1 can of chickpeas", "smoked paprika", "salt", "black pepper", "cumin"], 
-//    "Kabocha Squash": ["1 kabocha squash"], 
-//    "Grilled Veggies": [""], 
-//    "Pickled Beets": ["1/2 a lemon", "2 beets"], 
-//    "Tater Tots": ["1 pack of tater tots"],
-//    "Lemon Poppy Seed Balls": [""], 
-//    "Black Bean Brownies": ["1 can of black beans"], 
-//    "Boba Ice Cream Bar": ["1 box of Brown Sugar Boba Ice Cream Bars"], 
-//    "Honey Dew": ["1 honey dew melon"], 
-//    "Asian Pears": ["2 asian pears"], 
-//    "Apple and Peanut Butter": ["3 apples", "peanut butter"], 
-//    "Oatmeal and Bananas": ["1/2 a banana", "Honey", "Oats", "Plant milk", "Peanut butter"], 
-//    "Plumcots": ["1 case of plumcots from Trader Joe's"], 
-//    "Red Bean Mochi": [""], 
-//    "Batida de Coco": ["Coconut milk", "Ice", "Cachaça (rum)", "Sweetened condensed milk", "Lime juice"], 
-//    "Cinnamon Sweet Potatoes": ["2 sweet potatoes", "cinnamon", "nutmeg", "honey", "salt", "black pepper"], 
-//    "Granola and Greek Yogurt": [""], 
-//    "Bananas" : ["4 bananas"], 
-//    "Sunflower Butter Ice Cream" : ["1 pint of Sunflower Butter Ice Cream"], 
-//    "Kiwis" : ["3 kiwis"], 
-//    "Cashew Caramel Ice Cream": ["1 pint of So Delicious Cashew Caramel Ice Cream"],
-//    "Rice Cooker Chocolate Cake": ["1 pint of So Delicious Cashew Caramel Ice Cream"],
-//    "Coconut Rice": ["Coat the inside of the rice cooker with coconut oil and add the rice, water and coconut milk. Cover and turn the rice cooker on."],
-//    "Pineapple Fried Rice": ["Cook brown rice in the rice cooker with vegetable broth. While the rice is cooking, saute the peas, carrots, and onion on the stove with 1 tbsp olive oil and 1 tsp sesame oil until onions are translucent. Add pinapple, egg, and green onion. When rice is finished cooking, heat the remaining tbsp of olive oil and 1 sp of sesame oil in pan and add rice. Stir for about 1 minute before adding the other ingredients. Cook for 2-3 minutes and serve immediately."],
-//    "Cilantro Lime Rice": ["Add olive oil and choppen onion to the rice cooker then switch on. When the onion begins to soften, add the garlic, rice, water, and salt. Cook until all the water is absorbed. Fluff rice with a fork. Stir in lime juice and cilantro and serve immediately"]
-    

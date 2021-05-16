@@ -24,25 +24,27 @@
 }
 
 /*PAGE IN 4 PARTS*/
+
+.partA,.partB, .partC, .partD {
+   width: 25vw;
+    float: left; 
+}
+
 .partA{
-    width: 25vw;
-    float: left;
-    background-image: linear-gradient(180deg,#F08080,#F9C8C8);
+    background-color: #472d30;
 }
+
 .partB{
-    width: 25%;
-    float: left;
-    background-image: linear-gradient(180deg,#FFBF69,#B23A48);
+    background-color: #723d46;
 }
+
 .partC{
-    width: 25%;
-    float: left;
-    background-image: linear-gradient(180deg,#CBF3F0,#B23A48);
+    background-color: #e26d5c;
 }
+
 .partD{
-    width: 25%;
-    float: left;
-    background-image: linear-gradient(180deg,#2EC4B6,#B23A48);
+/*    background-image: linear-gradient(180deg,#2EC4B6,#B23A48);*/
+    background-color: ffe1a8;
 }
 
 /*RECIPES*/
@@ -127,14 +129,14 @@
     display: flex;
 }
 
-.recipe-cards img{
-    height: auto;
-    width: 25vw;
-    padding: 1rem;
+.partA .card img,.partB .card img, .partC .card img,.partD .card img{
+/*  clip: rect(0, 23vw, 20vw, 0);*/
+/*    width: 25vw;*/
+    float: left; 
 }
 
 .partA .card,.partB .card, .partC .card,.partD .card {
-    color: black;
+    color: white;
     background-color: transparent;
     width: 22vw;
     border: none;
@@ -167,7 +169,8 @@
     }
     
     .partA button,.partB button, .partC button,.partD button{
-        width: 80vw;
+        width: 70vw;
+        margin: 1vh 15vw;
     }
     
     .grocery-container{
