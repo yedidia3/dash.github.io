@@ -57,7 +57,9 @@
     justify-content: space-around;
 }
 
-
+.meal-container{
+    
+}
 
 .threeMeal{
     display: flex;
@@ -150,9 +152,13 @@
         
     }
     .threeMeal{
-        flex-direction: column;
+        
     }
     
+    .partA, .partB, .partC,.partD{
+        width: 100vw;
+        float: left; 
+    }
     
     .partA .card,.partB .card, .partC .card,.partD .card, .partA,.partB, .partC,.partD{
         width: 100vw;
