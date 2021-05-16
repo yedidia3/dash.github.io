@@ -11,13 +11,6 @@
 /*    padding: 5%;*/
 }
 
-.top{
-    display: flex;
-}
-
-.middle{
-    
-}
 
 .bottom{
     
@@ -59,19 +52,16 @@
 
 
 /*3-PART MEAL SELECTOR*/
-.selector-container{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex: 1.5;
-}
 
 .threeMeal{
     display: flex;
     justify-content: center;
     text-align: center;
-/*    flex-direction: row;*/
+    flex: 1.5;
+    flex-direction: row;
 }
+
+
 
 .threeMeal button{
     padding: 0.8rem;
@@ -123,11 +113,13 @@
     padding: 0.4rem;
 }
 
+/*
 .recipe-cards{
     justify-content: center;
     align-content: center;
     display: flex;
 }
+*/
 
 .partA .card img,.partB .card img, .partC .card img,.partD .card img{
 /*  clip: rect(0, 23vw, 20vw, 0);*/
@@ -149,8 +141,9 @@
         overflow-x: hidden;
     }
     .threeMeal{
-    flex-direction: column;
+        flex-direction: column;
     }
+    
     .top{
         flex-direction: column;
     }

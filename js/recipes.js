@@ -5,7 +5,7 @@ var sauce = ["Congolese Tomato Sauce", "Pili Pili", "Hummus", "Tahini Herb Sauce
 
 var side = ["French Fries", "Burmese Mango Salad", "Plantains", "Tortilla Chips", "Steamed Broccoli", "Seaweed Salad", "Baked Chickpeas", "Kabocha Squash", "Grilled Veggies", "Pickled Beets", "Tater Tots", "Roasted Veggies", "Congolese Spinach", "Basmati Rice", "Cucumbers", "Pinapple Fried Rice", "Thai Coconut Rice"];
 
-var sweets = ["Lemon Poppy Seed Balls", "Brownies", "Boba Ice Cream Bar", "Apple and Peanut Butter", "Apple Pie Oatmeal", "Red Bean Mochi", "Batida de Coco", "Cinnamon Sweet Potatoes", "Granola, Strawberries and Greek Yogurt", "Bananas", "Sunflower Butter Ice Cream", "Honey Dew, Kiwis, Asian Pears, Plumcots", "Cashew Caramel Ice Cream", "Galettes", "Peach Cobbler", "Peanut Butter Protein Waffles", "Chocolate Rice Cooker Cake"];
+var sweets = ["Lemon Poppy Seed Balls", "Brownies", "Boba Ice Cream Bar", "Apple and Peanut Butter", "Apple Pie Oatmeal", "Red Bean Mochi", "Batida de Coco", "Cinnamon Sweet Potatoes", "Granola, Strawberries and Greek Yogurt", "Bananas", "Sunflower Butter Ice Cream", "Honey Dew, Kiwis, Asian Pears, Plumcots", "Cashew Caramel Ice Cream", "Galettes", "Peach Cobbler", "Peanut Butter Protein Waffles"];
 
 //RECIPES
 
@@ -14,14 +14,14 @@ var recipeDict = {
     "Shakshuka": "Heat oven to 375 degrees. Cook onion, oil, and bell pepper over medium-low fire for 20 minutes. Add garlic and cook for 2 minutes. Add in spices and cook 1 minute. Pour in tomatoes and cook for 10 minutes or until thickened. Transfer to baking pan, crack eggs and bake for 7-10 minutes. Add basil and cilantro and serve over bread.", 
     "Pondu and Rice": "Chop all veggies. Boil 2 packs of pondu in water for 10 minutes then strain.",
     "TLT": "Pan fry the chopped tempeh in soy sauce and black pepper. Toast the bread adn layer into a beautiful sandwich.", 
-    "Vegan American Breakfast": "",
+    "Vegan American Breakfast": "Cook the eqqs, vegan meat and potatoes.",
     "Gnocchi in Red Sauce": "Pan fry the chopped and prepared veggies. Add in red sauce and pesto. Cook gnocchi until chewy, not squishy.", 
     "Japanese Style Macro Bowl": "", 
-    "Teriyaki Bao": "", 
+    "Teriyaki Bao": "Stir fr", 
     "Mediterranean Style Salad": "", 
     "Kale Salad": "Season tempeh with soy sauce, black pepper, and salt and bake at 400 degrees. Prepare and chop veggies. Allow tempeh to cool and combine. Serve salad cold.", 
     "Curry Salad": "Prepare and chop veggies. Cook chickpeas in west indian curry. Fry or scramble just egg. Let hot items cool and combine to serve salad room temp.", 
-    "Tacos": "", 
+    "Tacos de Alambre": "Stir fry the bacon and add the veggies. Served on a corn tortilla.", 
     "Tex Mex Bowl": "", 
     "Fried Rice": "eep", 
     "Veggie Stir Fry": "Prepare and chop veggies.", 
@@ -43,7 +43,7 @@ var recipeDict = {
     "Kabocha Squash": "", 
     "Grilled Veggies": "Prepare and chop veggies.", 
     "Pickled Beets": "Boil beets for 10 minutes. Strain and sqeeze lemon juice and salt on the beets. Serve cold.", 
-    "Tater Tots": "Air fry the tots for 18 minutes.",
+    "Tater Tots": "Air fry or bake the tots for 18 to 22 minutes.",
     "Lemon Poppy Seed Balls": "", 
     "Brownies": "Preheat the oven to 350°F. First, line an 8x8 baking pan with parchment paper. Refer to the photos above or the notes below for the best way to do this. Then rub some softened butter on top of the parchment paper. In a large bowl, whisk together the hot melted butter and sugar. Then, whisk in the milk and vanilla. In a separate bowl, combine the dry ingredients: flour, cocoa powder, baking powder, and salt. Mix the dry ingredients into the bowl with the butter and sugar mixture until well combined. Fold in the chocolate chips. Spread the batter evenly into the baking pan. Bake for 25-30 minutes, or until a fork comes out relatively clean. Let cool for about 30 minutes in the pan. Then grab the parchment paper handles and pull the brownies out. Set on a wire rack to finish cooling completely before cutting. For clean-cut brownies, run a clean knife under hot water in between each slice. Store leftover brownies in an airtight container at room temperature for up to 5 days.", 
     "Boba Ice Cream Bar": "you just eat it 😋", 
@@ -55,13 +55,12 @@ var recipeDict = {
     "Batida de Coco": "", 
     "Cinnamon Sweet Potatoes": "Chop sweet potato into coin shaped pieces. Arrange on a baking pan and drizzle oil, honey, smoked paprika, black pepper, and salt. Bake at 450˚F", 
     "Granola and Greek Yogurt": "", 
-    "Bananas" : "4 bananas", 
+    "Bananas" : "buy 3 bananas", 
     "Sunflower Butter Ice Cream": "1 pint", 
     "Cashew Caramel Ice Cream": "1 pint",
     "Palak Paneer": "Blanch the spinach for 2 minutes then drain and dry. Prep onion, garlic, ginger, tomatoe, serrano pepper for food processor. Boil Tofu for 2 minutes. Add veggies, spinach and cashews to food processor and blend until smooth. Cook spices, bay leaf, onion, garlic on stove then pour in spinach sauce. Coat tofu cubes in, add lemon or lime juice, and cook for 2 minutes.",
     "Pineapple Fried Rice": "1/4 cup pineapple, 1/2 cup frozen peas, 1/4 cup diced onion, 2 tbsp olive oil, 2 tsp sesame oil, 1/2 tsp ginger powder, 1/4 cup green onion, 3/4 short grain rice, 1.5 vegetable broth, 1 egg",
     "Noodle Stir Fry": "",
-    "Rice Cooker Chocolate Cake": "1/2 cup cane sugar, 6 tbsp butter, 1 egg, 1 tsp vanilla extract, 1/2 tsp baking powder, 1 cup flour, 1/4 cup cocoa powder, 1/2 cup oat milk",
     "Cilantro Lime Rice": "1 tsp olive oil, 1/4 cup chopped onion, 1 clove garlic, 3/4 long grain jasmine rice, 1.25 cup water, 1/8 tsp salt, 1 tbsp freshly squeezed lime juice, 1/8 cup chopped cilantro"
     
     
@@ -81,15 +80,15 @@ var groceryDict = {
     "Vegan American Breakfast": ["Just Egg", "Veggie Breakfast Sausage", "tater tots"],
     "Gnocchi in red sauce": [], 
     "Japanese Style Macro Bowl": [], 
-    "Mediterranean Style Salad": [], 
+    "Mediterranean Style Salad": ["chickpeas", "kale", "dried cranberries", "hummus", "1 cucumber"], 
     "Kale Salad": ["curly kale", "1 tomato", "tempeh", "1 avocado", "soy sauce", "poppy seed dressing"], 
     "Curry Salad": ["Just egg", "West Indian Curry", "1 Sweet potato", "1/2 a bag of Spinach", "1 can of Chickpeas", "Black Pepper", "Salt", "Avocado Oil"], 
-    "Tacos de Alambre": ["mushrooms", "1 green pepper", "1 orange pepper", "1 onion", "black pepper", "mushroom umami", "cumin", "vegan bacon", "gucamole", "nacho cheese"], 
+    "Tacos de Alambre": ["mushrooms", "1 green pepper", "1 orange pepper", "1 onion", "black pepper", "mushroom umami", "cumin", "vegan bacon", "gucamole", "nacho cheese", "corn tortilla"], 
     "Tex Mex Bowl": ["1 can of black beans", "pickled jalapenos"], 
     "Fried Rice": ["jasmine rice", "soy sauce", "Just egg", "black pepper", "1 carrot", "1/2 cup of peas"], 
     "Vegan Ramen": ["seaweed", "miso paste", "sriracha", "1 egg", "ramen noodles"], 
     "Avocado Toast and Eqqs": [], 
-    "Crispy Tofu, Cucumber and Edamame": [],
+    "Crispy Tofu, Cucumber and Edamame": ["cucumber", "edamame", "tofu morsels"],
     "Guac, Eqqs, Salsa and Chips": ["gucamole", "just egg", "tortilla chips", "chipotle salsa"], 
     "Plant Meat Burger": ["Beyond burger", "lettuce", "mushrooms", "1/2 an onion", "black pepper", "soy sauce", "gouda cheez", "pickles"], 
     "Pesto Rotini": [], 
@@ -120,11 +119,11 @@ var groceryDict = {
     "Cinnamon Sweet Potatoes": ["2 sweet potatoes", "honey", "smoked paprika", "black pepper", "salt", "nutmeg"], 
     "Granola, Strawberries and Greek Yogurt": ["honey greek yogurt", "strawberries", "ginger granola"],
     "Galettes": ["vegan butter", "flour", "sugar"], 
-    "Peach Cobbler": [], 
+    "Peach Cobbler": ["peaches"], 
     "Peanut Butter Protein Waffles": ["peanut butter", "honey", "chia seeds", "flour", "water"],
     "Chocolate Rice Cooker Cake": [],
     "Burmese Mango Salad": [], 
-    "Plantains": [" 2 brown plantains"], 
+    "Plantains": [" 2 brown plantains", "black pepper"], 
     "Tortilla Chips": [], 
     "Steamed Broccoli": [], 
     "Seaweed Salad": [], 
@@ -243,7 +242,7 @@ function randomSauce(sauce){
     var recipeDirectionsSauce = document.querySelectorAll(".card-text")[1].innerHTML = recipeDict[chosenSauce];
     
     //show ingredients
-//    var groceryDirectionsSauce = document.querySelectorAll(".card-list")[1].innerHTML = groceryDict[chosenSauce];
+    var groceryDirectionsSauce = document.querySelectorAll(".card-list")[1].innerHTML = groceryDict[chosenSauce];
     
 };
 
@@ -268,7 +267,7 @@ function NewSauce()
     var recipeDirectionsMain = document.querySelectorAll(".card-text")[1].innerHTML = recipeDict[anotherSauce];
     
     //show ingredients
-//    var groceryDirectionsMain = document.querySelectorAll(".card-list")[1].innerHTML = groceryDict[anotherSauce];
+    var groceryDirectionsMain = document.querySelectorAll(".card-list")[1].innerHTML = groceryDict[anotherSauce];
 }
 
 //------------/
@@ -298,7 +297,7 @@ function randomSide(side){
     var recipeDirectionsMain = document.querySelectorAll(".card-text")[2].innerHTML = recipeDict[chosenSide];
     
     //show ingredients
-//    var groceryDirectionsMain = document.querySelectorAll(".card-list")[2].innerHTML = groceryDict[chosenSide];
+    var groceryDirectionsMain = document.querySelectorAll(".card-list")[2].innerHTML = groceryDict[chosenSide];
     
     //show ingredients in grocery list on click
         //maybe I need to push items into an array that places each item as a li
@@ -326,7 +325,7 @@ function NewSide()
     var recipeDirectionsMain = document.querySelectorAll(".card-text")[2].innerHTML = recipeDict[anotherSide];
     
     //show ingredients
-//    var groceryDirectionsMain = document.querySelectorAll(".card-list")[2].innerHTML = groceryDict[anotherSide];
+    var groceryDirectionsMain = document.querySelectorAll(".card-list")[2].innerHTML = groceryDict[anotherSide];
 }
 
 //------------/
@@ -352,7 +351,7 @@ function randomDessert(sweets){
     var recipeDirectionsMain = document.querySelectorAll(".card-text")[3].innerHTML = recipeDict[chosenDessert];
     
     // show ingredients in the grocery list
-//    var recipeDirectionsSweet = document.querySelector(".recipe-directions-sweet");
+    var recipeDirectionsSweet = document.querySelector(".recipe-directions-sweet");
     
     
 };
@@ -379,6 +378,9 @@ function NewSweet()
     
      //show recipe directions
     var recipeDirectionsMain = document.querySelectorAll(".card-text")[3].innerHTML = recipeDict[anotherSweet];
+    
+    //show ingredients
+    var groceryDirectionsMain = document.querySelectorAll(".card-list")[3].innerHTML = groceryDict[anotherSweet];
 }
 
 //-------------------------------------------------
