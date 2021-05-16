@@ -1,5 +1,5 @@
 //DISHES
-var main = ["Spicy Salmon Onigiri", "Shakshuka", "Pondu and Rice", "TLT", "Vegan American Breakfast", "Gnocchi in red sauce", "Japanese Style Bento", "Teriyaki Bao", "Mediterranean Style Salad", "Kale Salad", "Curry Salad", "Tacos de Alambre", "Tex Mex Salad Bowl", "Fried Rice", "Vegan Ramen", "Avocado Toast and Eqqs", "Crispy Tofu, Cucumber and Edamame", "Guac, Eqqs, Salsa and Chips", "Black Bean Burger", "Plant Meat Burger", "Pesto Rotini", "Sweet Potato Hash", "Palak Paneer", "Noodle Stir Fry", "Sushi Bake", "Nachos", "Burmese Tea Leaf Salad", "Gyros", "Congolese Shrimp", "Oyster Mushroom Nuggets"];
+var main = ["Spicy Salmon Onigiri", "Shakshuka", "Pondu and Rice", "TLT", "Vegan American Breakfast", "Gnocchi in red sauce", "Japanese Style Bento", "Teriyaki Bao", "Mediterranean Style Salad", "Kale Salad", "Curry Salad", "Tacos de Alambre", "Tex Mex Salad Bowl", "Fried Rice", "Vegan Ramen", "Avocado Toast and Eqqs", "Crispy Tofu, Cucumber and Edamame", "Guac, Eqqs, Salsa and Chips", "Black Bean Burger", "Plant Meat Burger", "Pesto Rotini", "Sweet Potato Hash", "Palak Paneer", "Noodle Stir Fry", "Sushi Bake", "Nachos", "Burmese Tea Leaf Salad", "Gyros", "Congolese Shrimp", "Oyster Mushroom Nuggets", "Oyster Mushroom Dragon Roll"];
 
 var sauce = ["Congolese Tomato Sauce", "Pili Pili", "Hummus", "Tahini Herb Sauce", "Ginger Sauce", "Orange Sauce", "Chipotle Salsa", "Avocado Poppy Seed Dressing", "Italian Tomato Sauce", "West Indian Curry", "Japanese Curry", "White Bean Dip", "Cashew Nacho Cheese", "Walnut Pesto", "Spicy Mayo", "Miso Tahini Butter", "Guacamole", "Ginger Jalapeno Sauce"];
 
@@ -16,7 +16,7 @@ var recipeDict = {
     "TLT": "Pan fry the chopped tempeh in soy sauce and black pepper. Toast the bread adn layer into a beautiful sandwich.", 
     "Vegan American Breakfast": "Cook the eqqs, vegan meat and potatoes.",
     "Gnocchi in Red Sauce": "Pan fry the chopped and prepared veggies. Add in red sauce and pesto. Cook gnocchi until chewy, not squishy.", 
-    "Japanese Style Bento": "", 
+    "Japanese Style Bento": "garlicky cucmbers, ginger grilled tofu, curried butternut squash, sauteed kale, pickled daikon, oyster mushroom avocado mango maki roll", 
     "Teriyaki Bao": "Chop veggies. Prepare the yeast. Stir fry veggies while the yeast rises. Wrap veggies in dough balls and steam on medium heat for 8 minutes.", 
     "Mediterranean Style Salad": "",
     "Oyster Mushroom Nuggets": "",
