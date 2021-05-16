@@ -18,21 +18,15 @@
 
 /*PAGE IN 4 PARTS*/
 
-.partA, .partB, .partC,.partD{
-    width: 25vw;
-    float: left; 
+.partA .card img,.partB .card img, .partC .card img,.partD .card img, .partA, .partB, .partC,.partD, .partA .card,.partB .card, .partC .card,.partD .card{
+      width: 25vw;
+    float: left;  
 }
 
-
-.partA .card img,.partB .card img, .partC .card img,.partD .card img{
-    width: 25vw;
-    float: left; 
-}
 
 .partA .card,.partB .card, .partC .card,.partD .card {
     color: white;
     background-color: transparent;
-    width: 25vw;
     border: none;
 }
 
@@ -147,38 +141,21 @@
         overflow-x: hidden;
         
     }
+    
     .threeMeal{
         flex-direction: column;
     }
     
-    .partA, .partB, .partC,.partD, .partA .card img,.partB .card img, .partC .card img,.partD .card img, .partA .card,.partB .card, .partC .card,.partD .card {
+    .partA, .partB, .partC, .partD, .partA .card img,.partB .card img, .partC .card img,.partD .card img, .partA .card,.partB .card, .partC .card,.partD .card {
         width: 100vw;
         min-width: 100vw;
         height: auto;
-/*        float: left; */
         font-size: 1.3rem;
     }
-
-    
-/*
-    .partA, .partB, .partC,.partD{
-        min-width: 100vw;
-        height: auto;
-        float: left; 
-        font-size: 1.3rem;
-    }
-*/
-    
-/*
-    .partA .card,.partB .card, .partC .card,.partD .card, .partA,.partB, .partC,.partD{
-        width: 100vw;
-        margin: 0;
-    }
-*/
     
     .partA .card img,.partB .card img, .partC .card img,.partD .card img{
         padding: 0 15vw;
-        width: 100vw;
+/*        width: 100vw;*/
     }
     
     .partA button,.partB button, .partC button,.partD button{
