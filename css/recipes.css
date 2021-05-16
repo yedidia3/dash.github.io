@@ -18,9 +18,22 @@
 
 /*PAGE IN 4 PARTS*/
 
-.partA,.partB, .partC, .partD {
-   width: 25vw;
+.partA, .partB, .partC,.partD{
+    width: 25vw;
     float: left; 
+}
+
+
+.partA .card img,.partB .card img, .partC .card img,.partD .card img{
+    width: 25vw;
+    float: left; 
+}
+
+.partA .card,.partB .card, .partC .card,.partD .card {
+    color: white;
+    background-color: transparent;
+    width: 22vw;
+    border: none;
 }
 
 .partA{
@@ -88,6 +101,7 @@
     color: #fff;
 }
 
+
 /*GROCERY LIST*/
 
 .grocery-container{
@@ -124,23 +138,7 @@
 }
 */
 
-.partA, .partB, .partC,.partD{
-    width: 25vw;
-    float: left; 
-}
 
-
-.partA .card img,.partB .card img, .partC .card img,.partD .card img{
-    width: 25vw;
-    float: left; 
-}
-
-.partA .card,.partB .card, .partC .card,.partD .card {
-    color: white;
-    background-color: transparent;
-    width: 22vw;
-    border: none;
-}
 
 
 @media screen and (max-width:850px)
@@ -151,7 +149,6 @@
     }
     .threeMeal{
         flex-direction: column;
-        justify-content: 
     }
     
     .partA, .partB, .partC,.partD{
