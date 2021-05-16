@@ -21,6 +21,7 @@
 .partA .card img,.partB .card img, .partC .card img,.partD .card img, .partA, .partB, .partC,.partD, .partA .card,.partB .card, .partC .card,.partD .card{
       flex: 25%;
     float: left;  
+/*    width: 25vw;*/
 }
 
 
@@ -73,8 +74,10 @@
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    min-width: 100vw;
+/*    min-width: 100vw;*/
+    flex: 100%;
     height: auto;
+    flex-direction: row;
 }
 
 .threeMeal button{
@@ -148,18 +151,22 @@
     
     .partA, .partB, .partC, .partD, .partA .card img,.partB .card img, .partC .card img,.partD .card img, .partA .card,.partB .card, .partC .card,.partD .card {
         flex: 100%;
+/*
         height: auto;
+        min-width: 100vw;
+*/
         font-size: 1.3rem;
     }
     
     .partA .card img,.partB .card img, .partC .card img,.partD .card img{
-        padding: 0 15vw;
-/*        width: 100vw;*/
+/*        padding: 0 15vw;*/
     }
     
     .partA button,.partB button, .partC button,.partD button{
+/*
         width: 70vw;
         margin: 1vh 15vw;
+*/
     }
     
     .grocery-container{
