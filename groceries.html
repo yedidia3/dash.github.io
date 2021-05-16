@@ -8,7 +8,6 @@
    
     <link rel="stylesheet" href="css/recipes.css">
     
-    <link rel="stylesheet" href="css/menu.css">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     
@@ -52,69 +51,15 @@
     <header>
         <h1>Grocery List Generator</h1>
     </header>
-    
-    <div class="partA"></div>
-    <div class="partB"></div>
-    <div class="partC"></div>
-    <div class="partD"></div>
-    
-    
-    <div class="top">
-    <div class="selector-container">
-        <div class="threeMeal container">
-<!--            <h3>3-Part Meal Ideas</h3>-->
-                <div class="row">
-                    <div class="col mx-auto">
-                        <button class="entree" id="message1"></button>
-                        <button  class="redoEntree" type="button"  value="Main" onclick="NewEntree();" alt="">
+    <div class="row threeMeal">
+        <div class="partA">
+            <div class="col mx-auto">
+                    <button class="entree" id="message1"></button>
+                    <button  class="redoEntree" type="button"  value="Main" onclick="NewEntree();" alt="">
                         <i class="fas fa-redo-alt"></i>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col mx-auto">
-                        <button class="sauce"
-                            id="message2"
-                        ></button>
-                        <button  class="redoSauce" type="button"  value="Sauce" onclick="NewSauce();" alt="">
-                        <i class="fas fa-redo-alt"></i>
-                        </button>
-                    </div>
-                </div>
-                
-                 <div class="row">
-                    <div class="col mx-auto">
-                        <button class="side"
-                            id="message3"
-                        ></button>
-                        <button  class="redoSide" type="button"  value="Side" onclick="NewSide();" alt="">
-                        <i class="fas fa-redo-alt"></i>
-                        </button>
-                    </div>
-                </div>
-                
-                 <div class="row">
-                    <div class="col mx-auto">
-                        <button class="sweets"
-                            id="message4"
-                        ></button>
-                        <button  class="redoSweet" type="button"  value="Sweet" onclick="NewSweet();" alt="">
-                        <i class="fas fa-redo-alt"></i>
-                        </button>
-                    </div>
-                </div>
-        </div>
-    </div>
-
-  
-  
-   </div> 
-   
-   <div class="bottom">
-    <div class="recipe-cards container">
-        <div class="row">
-            <div class="col-lg-4 col-sm-13">
+                    </button>
+            </div>
+            <div class="col-lg-4 col-sm-13 ">
             <div class="card" >
               <img class="card-img-top image1" src="" alt="">
               <div class="card-body">
@@ -123,16 +68,17 @@
               </div>
             </div>
             </div>
+        </div>
+        <div class="partB">
+            <div class="col mx-auto">
+                        <button class="sauce"
+                            id="message2"
+                        ></button>
+                        <button  class="redoSauce" type="button"  value="Sauce" onclick="NewSauce();" alt="">
+                        <i class="fas fa-redo-alt"></i>
+                        </button>
+            </div>
             
-            <div class="col-lg-4 col-sm-12">
-               <div class="card" >
-              <img class="card-img-top image4" src="" alt="">
-              <div class="card-body">
-               <div class="card-title"></div>
-                <p class="card-text recipe-directions-sauce"></p>
-              </div>
-            </div>
-            </div>
             <div class="col-lg-4 col-sm-12">
                <div class="card" >
               <img class="card-img-top image2" src="" alt="">
@@ -142,7 +88,16 @@
               </div>
             </div>
             </div>
-            
+        </div>
+        <div class="partC">
+            <div class="col mx-auto">
+                        <button class="side"
+                            id="message3"
+                        ></button>
+                        <button  class="redoSide" type="button"  value="Side" onclick="NewSide();" alt="">
+                        <i class="fas fa-redo-alt"></i>
+                        </button>
+            </div>
             <div class="col-lg-4 col-sm-12">
                <div class="card">
               <img class="card-img-top image3" src="" alt="">
@@ -152,11 +107,69 @@
               </div>
             </div>
             </div>
+            
+        </div>
+        <div class="partD">
+            <div class="col mx-auto">
+                        <button class="sweets"
+                            id="message4"
+                        ></button>
+                        <button  class="redoSweet" type="button"  value="Sweet" onclick="NewSweet();" alt="">
+                        <i class="fas fa-redo-alt"></i>
+                        </button>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+               <div class="card" >
+              <img class="card-img-top image4" src="" alt="">
+              <div class="card-body">
+               <div class="card-title"></div>
+                <p class="card-text recipe-directions-sauce"></p>
+              </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="top">
+    <div class="selector-container">
+        <div class=" container">
+<!--            <h3>3-Part Meal Ideas</h3>-->
+                <div class="row">
+                    
+                </div>
+                
+                <div class="row">
+                    
+                </div>
+                
+                 <div class="row">
+                    
+                </div>
+                
+                 <div class="row">
+                    
+                </div>
+        </div>
+    </div>
+
+  
+  
+   </div> 
+   
+   <div class="middle">
+    <div class="recipe-cards container">
+        <div class="row ">
+            
+            
+            
+            
+            
+            
         </div>
     </div>
     </div> 
     
-    <div class="listView">
+    <div class="listView bottom">
         <div class="grocery-container">
        <h2>Grocery List</h2>
         <ul class="grocery-list"></ul>

@@ -6,6 +6,7 @@
 .recipePage{
     color: white;
     min-height: 100vh;
+    min-width: 100vw;
     background-color: #FFBF69;
 /*    padding: 5%;*/
 }
@@ -14,43 +15,45 @@
     display: flex;
 }
 
+.middle{
+    
+}
+
+.bottom{
+    
+}
+
 /*PAGE IN 4 PARTS*/
 .partA{
-    width: 25%;
-    background-image: linear-gradient(180deg,#FF9F1C,#B23A48);
+    width: 25vw;
+    float: left;
+    background-image: linear-gradient(180deg,#F08080,#F9C8C8);
 }
 .partB{
     width: 25%;
+    float: left;
     background-image: linear-gradient(180deg,#FFBF69,#B23A48);
 }
 .partC{
     width: 25%;
+    float: left;
     background-image: linear-gradient(180deg,#CBF3F0,#B23A48);
 }
 .partD{
     width: 25%;
+    float: left;
     background-image: linear-gradient(180deg,#2EC4B6,#B23A48);
 }
 
 /*RECIPES*/
 
-.recipe-container{
-    display: flex;
-    text-align: left;
-    color: #8C2F39;
-    width: 40%;
-    flex: 1;
-}
+
 
 .recipe-directions-main, .recipe-directions-side, .recipe-directions-sweet{
     list-style: disc;
 }
 
-.recipe{
-    background: #fff;
-    padding: 10px;
-    border-radius: 1rem;
-}
+
 
 
 /*3-PART MEAL SELECTOR*/
@@ -130,13 +133,19 @@
     padding: 1rem;
 }
 
-.card {
+.partA .card,.partB .card, .partC .card,.partD .card {
     color: black;
-    margin: 1rem;
+    background-color: transparent;
+    width: 22vw;
+    border: none;
 }
+
 
 @media screen and (max-width:768px)
 {
+    .body{
+        overflow-x: hidden;
+    }
     .threeMeal{
     flex-direction: column;
 }
@@ -148,15 +157,17 @@
         justify-content: center;
     }
     
-    .card{
+    .partA .card,.partB .card, .partC .card,.partD .card{
         width: 100vw;
         margin: 0;
     }
     
-    .card img{
+    .partA .card img,.partB .card img, .partC .card img,.partD .card img{
         width: 50vw;
-        
-        
+    }
+    
+    .partA button,.partB button, .partC button,.partD button{
+        width: 80vw;
     }
     
     .grocery-container{
