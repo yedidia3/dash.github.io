@@ -159,7 +159,7 @@
         justify-content: center;
     }
     
-    .partA .card,.partB .card, .partC .card,.partD .card{
+    .partA .card,.partB .card, .partC .card,.partD .card, .partA,.partB, .partC,.partD{
         width: 100vw;
         margin: 0;
     }
