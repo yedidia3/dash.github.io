@@ -1,13 +1,15 @@
 *{
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    font-size: 1.2rem;
 }
 
 .recipePage{
     color: white;
     min-height: 100vh;
     min-width: 100vw;
-    background-color: #FFBF69;
+    background-color: #472d30;
+/*    background-image: linear-gradient(180deg,#472d30,#723d46,#ffe1a8,#e26d5c);*/
 /*    padding: 5%;*/
 }
 
@@ -18,7 +20,7 @@
 
 .container-fluid{
     margin: 0;
-    padding: 0;
+    padding-left: -100px;
 }
 /*PAGE IN 4 PARTS*/
 
@@ -48,8 +50,7 @@
 }
 
 .partD{
-/*    background-image: linear-gradient(180deg,#2EC4B6,#B23A48);*/
-    background-color: #ffe1a8;
+    background-color: #8C2F39;
 }
 
 
@@ -99,7 +100,7 @@
 }
 
 .threeMeal button:hover{ 
-    background: #8C2F39;
+    background: #ffe1a8;
     color: #fff;
 }
 
@@ -155,7 +156,6 @@
     }
     
     .partA, .partB, .partC, .partD, .partA .card img,.partB .card img, .partC .card img,.partD .card img, .partA .card,.partB .card, .partC .card,.partD .card {
-/*        flex: 100%;*/
 /*
         height: auto;
         min-width: 100vw;
@@ -164,7 +164,7 @@
     }
     
     .partA .card img,.partB .card img, .partC .card img,.partD .card img{
-/*        padding: 0 15vw;*/
+        padding: 0 15vw;
         width: 100vw;
     }
     
