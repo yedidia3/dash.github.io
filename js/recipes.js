@@ -5,7 +5,7 @@ var sauce = ["Congolese Tomato Sauce", "Pili Pili", "Hummus", "Tahini Herb Sauce
 
 var side = ["French Fries", "Burmese Mango Salad", "Plantains", "Tortilla Chips", "Steamed Broccoli", "Seaweed Salad", "Baked Chickpeas", "Kabocha Squash", "Grilled Veggies", "Pickled Beets", "Tater Tots", "Roasted Veggies", "Congolese Spinach", "Basmati Rice", "Pinapple Fried Rice"];
 
-var sweets = ["Lemon Poppy Seed Balls", "Brownies", "Boba Ice Cream Bar", "Apple and Peanut Butter", "Apple Pie Oatmeal", "Red Bean Mochi", "Batida de Coco", "Cinnamon Sweet Potatoes", "Granola, Strawberries and Greek Yogurt", "Bananas", "Sunflower Butter Ice Cream", "Honey Dew, Kiwis, Asian Pears, Plumcots", "Cashew Caramel Ice Cream", "Galettes", "Peach Cobbler", "Peanut Butter Protein Waffles", "Green Tea Ice Cream"];
+var sweets = ["Lemon Poppy Seed Balls", "Brownies", "Boba Ice Cream Bar", "Apple and Peanut Butter", "Apple Pie Oatmeal", "Red Bean Mochi", "Batida de Coco", "Cinnamon Sweet Potatoes", "Granola, Strawberries and Greek Yogurt", "Bananas", "Sunflower Butter Ice Cream", "Honey Dew, Kiwis, Asian Pears, Plumcots", "Cashew Caramel Ice Cream", "Galettes", "Peach Cobbler", "Peanut Butter Protein Waffles", "Green Tea Ice Cream", "Avocado Banana Smoothie Bowl"];
 
 //RECIPES
 
@@ -64,7 +64,8 @@ var recipeDict = {
     "Pineapple Fried Rice": "1/4 cup pineapple, 1/2 cup frozen peas, 1/4 cup diced onion, 2 tbsp olive oil, 2 tsp sesame oil, 1/2 tsp ginger powder, 1/4 cup green onion, 3/4 short grain rice, 1.5 vegetable broth, 1 egg",
     "Noodle Stir Fry": "",
     "Cilantro Lime Rice": "1 tsp olive oil, 1/4 cup chopped onion, 1 clove garlic, 3/4 long grain jasmine rice, 1.25 cup water, 1/8 tsp salt, 1 tbsp freshly squeezed lime juice, 1/8 cup chopped cilantro",
-    "Green Tea Ice Cream": ""
+    "Green Tea Ice Cream": "",
+    "Avocado Banana Smoothie Bowl": "Blend ingredients until creamy. Feel free to add other fruits. Top with chia seeds, nuts and granola."
     
 };
 
@@ -83,6 +84,7 @@ var groceryDict = {
     "Vegan American Breakfast": ["Just Egg", "Veggie Breakfast Sausage", "tater tots"],
     "Gnocchi in red sauce": [], 
     "Japanese Style Bento": [], 
+    "Avocado Banana Smoothie Bowl": ["salt", "1/2 avocado", "honey", "chia seeds", "nuts", "granola", "1/2 frozen banana"],
     "Crispy Rice Spicy Chickpea Crab": ["2 cups sushi rice", "3 cups water, plus extra for rinsing rice", "2 tbsp rice vinegar, or white wine vinegar", "1 tbsp sugar", "salt", "1 can garbanzo beans", "2 tbsp vegan mayonnaise", "1 tsp paprika", "1 tsp garlic powder", "1/2 tsp salt", "ground pepper", "1 Lemon", "1/2 cup vegan mayonnaise", "1-2 tbsp sriracha", "1 tsp garlic powder", "1 tsp ground paprika", "1 tbsp soy sauce", "Salt and pepper to taste", "Avocado", "Jalapeño or Serrano pepper, thinly sliced", "Chili oil or chili pepper flakes", "Fresh cilantro", "1/3 cup soy sauce", "Avocado oil"],
     "Mediterranean Style Salad": ["chickpeas", "kale", "dried cranberries", "hummus", "1 cucumber"], 
     "Kale Salad": ["curly kale", "1 tomato", "tempeh", "1 avocado", "soy sauce", "poppy seed dressing"], 
