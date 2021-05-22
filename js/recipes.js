@@ -1,11 +1,11 @@
 //DISHES
-var main = ["Spicy Salmon Onigiri", "Shakshuka", "Pondu and Rice", "TLT", "Vegan American Breakfast", "Gnocchi in red sauce", "Japanese Style Bento", "Teriyaki Bao", "Mediterranean Style Salad", "Kale Salad", "Curry Salad", "Tacos de Alambre", "Tex Mex Salad Bowl", "Fried Rice", "Vegan Ramen", "Avocado Toast and Eqqs", "Crispy Tofu, Cucumber and Edamame", "Guac, Eqqs, Salsa and Chips", "Black Bean Burger", "Plant Meat Burger", "Pesto Rotini", "Sweet Potato Hash", "Palak Paneer", "Noodle Stir Fry", "Sushi Bake", "Nachos", "Burmese Tea Leaf Salad", "Gyros", "Congolese Shrimp", "Oyster Mushroom Nuggets", "Oyster Mushroom Dragon Roll", "Crispy Rice Spicy Chickpea Crab"];
+var main = ["Spicy Salmon Onigiri", "Shakshuka", "Pondu and Rice", "TLT", "Vegan American Breakfast", "Gnocchi in red sauce", "Japanese Style Bento", "Teriyaki Bao", "Mediterranean Style Salad", "Kale Salad", "Curry Salad", "Tacos de Alambre", "Tex Mex Salad Bowl", "Fried Rice", "Vegan Ramen", "Avocado Toast and Eqqs", "Crispy Tofu, Cucumber and Edamame", "Guac, Eqqs, Salsa and Chips", "Black Bean Burger", "Plant Meat Burger", "Pesto Rotini", "Sweet Potato Hash", "Palak Paneer", "Noodle Stir Fry", "Sushi Bake", "Nachos", "Burmese Tea Leaf Salad", "Gyros", "Congolese Shrimp", "Oyster Mushroom Nuggets", "Oyster Mushroom Dragon Roll", "Crispy Rice Spicy Chickpea Crab", "With Ponzu Caviar"];
 
-var sauce = ["Congolese Tomato Sauce", "Pili Pili", "Hummus", "Tahini Herb Sauce", "Ginger Sauce", "Orange Sauce", "Chipotle Salsa", "Avocado Poppy Seed Dressing", "Italian Tomato Sauce", "West Indian Curry", "Japanese Curry", "White Bean Dip", "Cashew Nacho Cheese", "Walnut Pesto", "Spicy Mayo", "Miso Tahini Butter", "Guacamole", "Ginger Jalapeno Sauce"];
+var sauce = ["Congolese Tomato Sauce", "Pili Pili", "Hummus", "Tahini Herb Sauce", "Congolese Ginger Sauce", "Sesame Orange Sauce", "Chipotle Salsa", "Avocado Poppy Seed Dressing",  "Japanese Curry", "White Bean Dip", "Cashew Nacho Cheez", "Walnut Pesto", "Spicy Mayo", "Miso Tahini Butter", "Guacamole"];
 
-var side = ["French Fries", "Burmese Mango Salad", "Plantains", "Tortilla Chips", "Steamed Broccoli", "Seaweed Salad", "Baked Chickpeas", "Kabocha Squash", "Grilled Veggies", "Pickled Beets", "Tater Tots", "Roasted Veggies", "Congolese Spinach", "Basmati Rice", "Pinapple Fried Rice"];
+var side = ["French Fries", "Burmese Mango Salad", "Plantains", "Tortilla Chips", "Steamed Broccoli", "Seaweed Salad", "Baked Chickpeas", "Kabocha Squash", "Grilled Veggies", "Pickled Beets", "Tater Tots", "Roasted Veggies", "Congolese Spinach", "Basmati Rice", "Pinapple Fried Rice", "Cheezy Kale Chips", "West Indian Curry"];
 
-var sweets = ["Lemon Poppy Seed Balls", "Brownies", "Boba Ice Cream Bar", "Apple and Peanut Butter", "Apple Pie Oatmeal", "Red Bean Mochi", "Batida de Coco", "Cinnamon Sweet Potatoes", "Granola, Strawberries and Greek Yogurt", "Bananas", "Sunflower Butter Ice Cream", "Honey Dew, Kiwis, Asian Pears, Plumcots", "Cashew Caramel Ice Cream", "Galettes", "Peach Cobbler", "Peanut Butter Protein Waffles", "Green Tea Ice Cream", "Avocado Banana Smoothie Bowl"];
+var sweets = ["Lemon Poppy Seed Balls", "Brownies", "Boba Ice Cream Bar", "Apple and Peanut Butter", "Apple Pie Oatmeal", "Red Bean Mochi", "Batida de Coco", "Cinnamon Sweet Potatoes", "Granola, Strawberries and Greek Yogurt", "Bananas", "Sunflower Butter Ice Cream", "Honey Dew, Kiwis, Asian Pears, Plumcots", "Cashew Caramel Ice Cream", "Galettes", "Peach Cobbler", "Peanut Butter Protein Waffles", "Green Tea Ice Cream", "Avocado Smoothie Bowl"];
 
 //RECIPES
 
@@ -19,6 +19,7 @@ var recipeDict = {
     "Japanese Style Bento": "garlicky cucmbers, ginger grilled tofu, curried butternut squash, sauteed kale, pickled daikon, oyster mushroom avocado mango maki roll", 
     "Teriyaki Bao": "Chop veggies. Prepare the yeast. Stir fry veggies while the yeast rises. Wrap veggies in dough balls and steam on medium heat for 8 minutes.", 
     "Mediterranean Style Salad": "",
+    "Cashew Nacho Cheez": "",
     "Crispy Rice Spicy Chickpea Crab": "1.Rinse the rice in a strainer until the water runs clear. Combine with water in a medium saucepan. Bring to a boil, then reduce the heat to low, cover and cook for 20 minutes. Rice should be tender and water should be absorbed. Let sit for 10 minutes then dump into a large bowl and mix so the heat releases.  2.In a separate small bowl, combine the rice vinegar, sugar and salt, mix then stir into the cooked rice. Let it cool COMPLETELY! The rice nuggets will fall apart if its warm. (you can put into fridge for a little too) 3.* Prepare the “chickpea imitation crab”* In a bowl combine drained chickpeas and all ingredients. Mash with a fork until all is well combined  and garbanzo beans are all broken up. Taste and adjust seasonings! 4.*Prepare the spicy mayo*: Combine all ingredients in a bowl. Mix well to combine. Taste and adjust seasonings to your liking!  5.*Making the crispy rice nuggets* make sure the rice is cooled COMPLETELY, then tightly form into squares, rounds or rectangles. In a bowl add in 1/3 cup of soy sauce. 6.In a large skillet over medium heat add 1-2 tbsp avocado oil or sesame oil. Cook them for 2 minutes on each side just until slightly golden then remove from the skillet and quickly dip the rice nuggets into the soy sauce. 7.Return the rice nuggets to the pan for an additional 2-3 minutes on each side * add in an extra 1 tbsp oil to the pan if needed. 8.Remove from the skillet and top with the spicy chickpea “crab”, then garnish with sliced avocado, a dollop of spicy mayo, fresh cilantro, and chili flakes",
     "Oyster Mushroom Nuggets": "",
     "Kale Salad": "Season tempeh with soy sauce, black pepper, and salt and bake at 400 degrees. Prepare and chop veggies. Allow tempeh to cool and combine. Serve salad cold.", 
@@ -143,15 +144,14 @@ var groceryDict = {
     "Pili Pili": ["8 orange habaneros", "1 lemon", "vegeta all purpose seasoning", "black pepper"], 
     "Hummus": ["tahini", "chickpeas", "lemon", "garlic"], 
     "Tahini Herb Sauce": [], 
-    "Ginger Sauce": [], 
-    "Orange Sauce": [], 
+    "Congolese Ginger Sauce": [], 
+    "Sesame Orange Sauce": [], 
     "Chipotle Salsa": [], 
-    "Avocado Poppy Seed Dressing": ["1 avocado", "poppy seed dressing"], 
-    "Italian Tomato Sauce": ["italian seasoning", "tomatoes", "garlic", "salt", "black pepper"], 
+    "Avocado Poppy Seed Dressing": ["1 avocado", "poppy seed dressing"],  
     "West Indian Curry": ["west indian curry paste", "mild jerk paste"], 
     "Japanese Curry": ["japanese curry paste block", "miso paste"], 
     "White Bean Dip": [], 
-    "Cashew Nacho Cheese": ["cashews", "dijon mustard", "nutritional yeast", "umami seasoning", "unsweetened oat milk", "corn starch"], 
+    "Cashew Nacho Cheez": ["cashews", "dijon mustard", "nutritional yeast", "umami seasoning", "unsweetened oat milk", "corn starch"], 
     "Walnut Pesto": [], 
     "Spicy Mayo": ["vegan mayo", "sriracha"], 
     "Miso Tahini Butter": [], 
@@ -300,21 +300,21 @@ randomSauce(sauce);
 
 function NewSauce()
 {
-    var randomnumberD = sauce[Math.floor(Math.random() * sauce.length)];
+    var anotherSauce = sauce[Math.floor(Math.random() * sauce.length)];
     
    //show new side when button is pressed
-    document.getElementById("message2").innerHTML=randomnumberD;
+    document.getElementById("message2").innerHTML=anotherSauce;
     
      //new recipe photo based on choice
-    var recipeImgSide = "img/" + anotherSauce + ".jpg";
+    var recipeImgSauce = "img/" + anotherSauce + ".jpg";
     var image2 = document.querySelectorAll("img")[1];
     image2.setAttribute("src", recipeImgSauce);
     
     //show recipe directions
-    var recipeDirectionsMain = document.querySelectorAll(".card-text")[1].innerHTML = recipeDict[anotherSauce];
+    var recipeDirectionsSauce = document.querySelectorAll(".card-text")[1].innerHTML = recipeDict[anotherSauce];
     
     //show ingredients
-    var groceryDirectionsMain = document.querySelectorAll(".card-list")[1].innerHTML = groceryDict[anotherSauce];
+    var groceryDirectionsSauce = document.querySelectorAll(".card-list")[1].innerHTML = groceryDict[anotherSauce];
     }
 
     
