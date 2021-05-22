@@ -1,9 +1,9 @@
 //DISHES
-var main = ["Spicy Salmon Onigiri", "Shakshuka", "Pondu and Rice", "TLT", "Vegan American Breakfast", "Gnocchi in red sauce", "Japanese Style Bento", "Teriyaki Bao", "Mediterranean Style Salad", "Kale Salad", "Curry Salad", "Tacos de Alambre", "Tex Mex Salad Bowl", "Fried Rice", "Vegan Ramen", "Avocado Toast and Eqqs", "Crispy Tofu, Cucumber and Edamame", "Guac, Eqqs, Salsa and Chips", "Black Bean Burger", "Plant Meat Burger", "Pesto Rotini", "Sweet Potato Hash", "Palak Paneer", "Noodle Stir Fry", "Sushi Bake", "Nachos", "Burmese Tea Leaf Salad", "Gyros", "Congolese Shrimp", "Oyster Mushroom Nuggets", "Oyster Mushroom Dragon Roll", "Crispy Rice Spicy Chickpea Crab", "With Ponzu Caviar"];
+var main = ["Spicy Salmon Onigiri", "Shakshuka", "Pondu and Rice", "TLT", "Vegan American Breakfast", "Gnocchi in red sauce", "Japanese Style Bento", "Teriyaki Bao", "Mediterranean Style Salad", "Kale Salad", "Curry Salad", "Tacos de Alambre", "Tex Mex Salad Bowl", "Fried Rice", "Vegan Ramen", "Avocado Toast and Eqqs", "Crispy Tofu, Cucumber and Edamame", "Guac, Eqqs, Salsa and Chips", "Black Bean Burger", "Plant Meat Burger", "Pesto Rotini", "Sweet Potato Hash", "Palak Paneer", "Noodle Stir Fry", "Sushi Bake", "Nachos", "Burmese Tea Leaf Salad", "Gyros", "Congolese Shrimp", "Oyster Mushroom Nuggets", "Oyster Mushroom Dragon Roll", "Crispy Rice Spicy Chickpea Crab", "With Ponzu Caviar", "Udon"];
 
 var sauce = ["Congolese Tomato Sauce", "Pili Pili", "Hummus", "Tahini Herb Sauce", "Congolese Ginger Sauce", "Sesame Orange Sauce", "Chipotle Salsa", "Avocado Poppy Seed Dressing",  "Japanese Curry", "White Bean Dip", "Cashew Nacho Cheez", "Walnut Pesto", "Spicy Mayo", "Miso Tahini Butter", "Guacamole"];
 
-var side = ["French Fries", "Burmese Mango Salad", "Plantains", "Tortilla Chips", "Steamed Broccoli", "Seaweed Salad", "Baked Chickpeas", "Kabocha Squash", "Grilled Veggies", "Pickled Beets", "Tater Tots", "Roasted Veggies", "Congolese Spinach", "Basmati Rice", "Pinapple Fried Rice", "Cheezy Kale Chips", "West Indian Curry"];
+var side = ["French Fries", "Burmese Mango Salad", "Plantains", "Tortilla Chips", "Steamed Broccoli", "Seaweed Salad", "Baked Chickpeas", "Kabocha Squash", "Grilled Veggies", "Pickled Beets", "Tater Tots", "Roasted Veggies", "Congolese Spinach", "Basmati Rice", "Cheezy Kale Chips", "West Indian Curry"];
 
 var sweets = ["Lemon Poppy Seed Balls", "Brownies", "Boba Ice Cream Bar", "Apple and Peanut Butter", "Apple Pie Oatmeal", "Red Bean Mochi", "Batida de Coco", "Cinnamon Sweet Potatoes", "Granola, Strawberries and Greek Yogurt", "Bananas", "Sunflower Butter Ice Cream", "Honey Dew, Kiwis, Asian Pears, Plumcots", "Cashew Caramel Ice Cream", "Galettes", "Peach Cobbler", "Peanut Butter Protein Waffles", "Green Tea Ice Cream", "Avocado Smoothie Bowl"];
 
@@ -62,7 +62,6 @@ var recipeDict = {
     "Sunflower Butter Ice Cream": "1 pint", 
     "Cashew Caramel Ice Cream": "1 pint",
     "Palak Paneer": "Blanch the spinach for 2 minutes then drain and dry. Prep onion, garlic, ginger, tomatoe, serrano pepper for food processor. Boil Tofu for 2 minutes. Add veggies, spinach and cashews to food processor and blend until smooth. Cook spices, bay leaf, onion, garlic on stove then pour in spinach sauce. Coat tofu cubes in, add lemon or lime juice, and cook for 2 minutes.",
-    "Pineapple Fried Rice": "1/4 cup pineapple, 1/2 cup frozen peas, 1/4 cup diced onion, 2 tbsp olive oil, 2 tsp sesame oil, 1/2 tsp ginger powder, 1/4 cup green onion, 3/4 short grain rice, 1.5 vegetable broth, 1 egg",
     "Noodle Stir Fry": "",
     "Cilantro Lime Rice": "1 tsp olive oil, 1/4 cup chopped onion, 1 clove garlic, 3/4 long grain jasmine rice, 1.25 cup water, 1/8 tsp salt, 1 tbsp freshly squeezed lime juice, 1/8 cup chopped cilantro",
     "Green Tea Ice Cream": "",
@@ -105,10 +104,9 @@ var groceryDict = {
     "Sushi Bake": ["spicy mayo", "furikake rice seasoning"], 
     "Nachos": ["nacho cheez", "1 can of black beans", "gucamole", "pickled jalapenos", "tortilla chips"], 
     "Burmese Tea Leaf Salad": [], 
-    "Gyros": ["tomato", "onion"], 
+    "Gyros": ["tomato", "onion", "cucumber", ], 
     "Congolese Shrimp": ["frozen uncooked shrimp", "palm oil", "all purpose seasoning"],
-    "Kiwis" : ["3 kiwis"], 
-    "Pineapple Fried Rice": ["Cook brown rice in the rice cooker with vegetable broth. While the rice is cooking, saute the peas, carrots, and onion on the stove with 1 tbsp olive oil and 1 tsp sesame oil until onions are translucent. Add pinapple, egg, and green onion. When rice is finished cooking, heat the remaining tbsp of olive oil and 1 sp of sesame oil in pan and add rice. Stir for about 1 minute before adding the other ingredients. Cook for 2-3 minutes and serve immediately."],
+    "Kiwis" : ["3 kiwis"],
     "Cilantro Lime Rice": ["Add olive oil and choppen onion to the rice cooker then switch on. When the onion begins to soften, add the garlic, rice, water, and salt. Cook until all the water is absorbed. Fluff rice with a fork. Stir in lime juice and cilantro and serve immediately"],
     "Sunflower Butter Ice Cream" : ["1 pint of Sunflower Butter Ice Cream"], 
     "Batida de Coco": ["Coconut milk", "Ice", "Cachaça (rum)", "Sweetened condensed milk", "Lime juice"],
@@ -194,6 +192,7 @@ function randomEntree(main){
 // MAKING THE INGREDIENT LIST
     //create ul in card
     var ul = document.createElement("ul");
+    ul.className = "ingredients";
     
     // add list to card body
     var cardbody = document.querySelectorAll(".card-body")[0].appendChild(ul);
@@ -240,8 +239,8 @@ function NewEntree()
     
     //show ingredients
     var groceryDirectionsMain = document.querySelectorAll(".card-list")[0].innerHTML = groceryDict[anotherEntree];
-    
 
+    
     
     }
     
