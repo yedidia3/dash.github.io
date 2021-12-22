@@ -121,7 +121,7 @@ function saveLocalTodos(todo){
 //GET TODOS HERE --------------------------------------
 //get todos from local storage
 function getTodos(){
-    console.log("hello");
+    
     //check if I already have todos 
      let todos;
     if(localStorage.getItem("todos") === null){

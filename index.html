@@ -3,43 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    
+       
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <title>Log</title>
+    
+    <nav class="menu">
+  <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+  <label class="menu-open-button" for="menu-open">
+    <span class="hamburger hamburger-1"></span>
+    <span class="hamburger hamburger-2"></span>
+    <span class="hamburger hamburger-3"></span>
+  </label>
+  
+  <a href="groceries.html" class="menu-item"><i class="fas fa-shopping-cart"></i> </a>
+  <a href="exercise.html" class="menu-item"><i class="fas fa-heartbeat"></i> </a>
+  <a href="language.html" class="menu-item"><i class="far fa-comments"></i> </a>
+<!--  <a href="#" class="menu-item"> <i class="fa fa-envelope"></i> </a>-->
+  
+  <!-- filters -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="shadowed-goo">
+          
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+          <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+          <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+          <feComposite in2="shadow" in="goo" result="goo" />
+          <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+      <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+    </defs>
+</svg>
+   
+<!--   menu-->
+</nav>
+
+    
 </head>
 <body>
     
-    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+
+
     
-    <div class="news">
-        <ul>
-            <li>VR News</li>
-            <li>COVID News</li>
-            <li>Grad School</li>
-            <li>Indie Game News</li>
-            <li>SoundCloud Songs</li>
-            <li></li>
-        </ul>
+
+        
+    <div class="font">
+        <h1>welcome, yedidia</h1>
     </div>
     
-    <div class="timeTracker">
-        <ul>
-            <li>VR</li>
-            <li>AR</li>
-            <li>Web Coding</li>
-            <li>3D Art</li>
-            <li>2D Art</li>
-            <li>Game Dev</li>
-            <li>Music</li>
-        </ul>
-    </div>
+
+        <!--======= To Do List =======--> 
+  
+<div class="display">      
+                    
+                      
+     <div class="bubble">
+      <h1>To Do List</h1>
+       <form action="">
+        <input type="text" class="todo-input">
+        <button class="todo-button" type="submit">
+            <i class="fas fa-plus"></i>
+        </button>
+        
+        <div class="select">
+            <select name="todos" class="filter-todo" id="">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="unfinished">Unfinished</option>
+            </select>
+        </div>
+        
+    </form>
     
-    <script src="js/clock.js"></script>
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+    </div>
+
+  
+        <!--======= Activity Log =======--> 
+      
+     <div class="bubble">
+      <h1>Hours Spent</h1>
+       <table>
+           <thead>
+               <tr>
+                   <td><button class="button_slide slide_right">VR/AR</button></td>
+                   <td>1:03 hr</td>
+               </tr>
+               <tr>
+                   <td> <button class="button_slide slide_right">Web Dev</button></td>
+                   <td>1:03 hr</td>
+               </tr>
+               <tr>
+                   <td><button class="button_slide slide_right">3D Art</button></td>
+                   <td>1:03 hr</td>
+               </tr>
+               <tr>
+                   <td><button class="button_slide slide_right">Therapy</button></td>
+                   <td>1:03 hr</td>
+               </tr>
+               <tr>
+                   <td><button class="button_slide slide_right">Game Dev</button></td>
+                   <td>1:03 hr</td>
+               </tr>
+               <tr>
+                   <td><button class="button_slide slide_right">Elladia</button></td>
+                   <td>1:03 hr</td>
+               </tr>
+               <tr>
+                   <td><button class="button_slide slide_right">Study</button></td>
+                   <td>1:03 hr</td>
+               </tr>
+           </thead>
+       </table>
+
+
+    </div>
+  </div>
+  
+   
+    <div class="mobile-wrapper">
+
+   <!--======= Header =======-->
+
+   <header class="hea">
+      <div class="contain">
+         <span>Welcome Back!</span>
+         <h1>Task Calendar</h1>
+
+         <div class="menu-toggle">
+            <div>
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!--======= Today =======-->
+
+   <section class="today-box" id="today-box">
+      <h3><div id="Date" class="date-title" onload="showDate()"> </div></h3>
+       <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+       <span class="breadcrumb">Today</span>
+
+      <div class="plus-icon">
+         <i class="ion ion-ios-add"></i>
+      </div>
+      
+
+      
+   </section>
+
+
+  
+  
+   <!--======= Upcoming Events =======-->
+
+   <section class="upcoming-events">
+      <div class="container">
+         <h3>
+            Events
+
+         </h3>
+         <div class="events-wrapper">
+            <div class="event">
+               <i class="ion ion-ios-flame hot"></i>
+               <h4 class="event__point">00:00 xm</h4>
+               <span class="event__duration">in xx minutes.</span>
+               <p class="event__description">
+                  Event description
+               </p>
+            </div>
+            <div class="event">
+               <i class="ion ion-ios-flame done"></i>
+               <h4 class="event__point">12:00 pm</h4>
+               <span class="event__duration">in 1 hour.</span>
+               <p class="event__description">
+                  Lunch with Paul Mccartney @Burgers House!
+               </p>
+            </div>
+            <div class="event active">
+               <i class="ion ion-ios-radio-button-on icon-in-active-mode"></i>
+               <h4 class="event__point">14:00 pm</h4>
+               <p class="event__description">
+                  Meet clients from project.
+               </p>
+            </div>
+
+
+         </div>
+         <button class="button_slide slide_left">
+            <span class="add-event-button__title">Add Event</span>
+
+            <span class="add-event-button__icon">
+               <i class="ion ion-ios-star-outline"></i>
+            </span> 
+
+
+         </button>
+      </div>
+   </section>
+</div>
+
+
+
+    
+<!--    <script src="js/clock.js"></script>-->
+    <script src="js/main.js"></script>
 </body>
 </html>
