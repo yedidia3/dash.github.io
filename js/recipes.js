@@ -184,7 +184,7 @@ function randomBreakfast(breakfast){
    recipeDirections[0].innerHTML = recipeDict[chosenBreakfast];
 
     // MAKING THE INGREDIENT LIST
-//    ul.className = "ingredients";
+    ul.className = "ingredients";
     
     // add list to card body
     groceryList[0].appendChild(ul);
