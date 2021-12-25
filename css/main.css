@@ -12,14 +12,12 @@
 
 body {
 /*   background: linear-gradient(45deg, rgb(19, 73, 95), rgb(118, 75, 226), rgb(131, 115, 198), rgb(119, 211, 185));*/
-    background-image: linear-gradient(135deg,#162944,#2F1847,#624763);
+/*    background-image: linear-gradient(135deg,#162944,#2F1847,#624763);*/
 /*    background-color: #2F1847;*/
    background-attachment: fixed;
    height:100vh;
    padding: 3rem 0;
    margin: 0;
-   
-      size: 14px;
     
    }
 

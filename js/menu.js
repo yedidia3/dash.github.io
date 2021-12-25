@@ -1,3 +1,8 @@
+window.addEventListener('load', (event) => {
+  console.log('menu loaded');
+});
+
+
 // ---------horizontal-navbar-menu-----------
 		var tabsNewAnim = $('#navbar-animmenu');
 		var selectorNewAnim = $('#navbar-animmenu').find('li').length;

@@ -1,63 +1,7 @@
 
-.recipePage{
-    color: white;
-    min-height: 100vh;
-    min-width: 100vw;
-/*    background-color: #472d30;*/
-/*    padding: 5%;*/
-}
 
-
-
-.container-fluid{
-    margin: 0;
-    padding-left: -100px;
-}
-/*PAGE IN 4 PARTS*/
-
-.partA .card img,.partB .card img, .partC .card img,.partD .card img, .partA, .partB, .partC,.partD, .partA .card,.partB .card, .partC .card,.partD .card{
-/*      flex: 25%;*/
-    float: left;  
-/*    width: 25vw;*/
-}
-
-
-.partA .card,.partB .card, .partC .card,.partD .card {
-    color: white;
-    background-color: transparent;
-    border: none;
-}
-
-
-
-/*RECIPES*/
-.recipe-directions-breakfast, .recipe-directions-lunch, .recipe-directions-dinner, .recipe-directions-sweet{
-    list-style: disc;
-}
-
-
-
-
-/*3-PART MEAL SELECTOR*/
-
-.splitBreakfast, .splitLunch, .splitDinner{
-    display: flex;
-    justify-content: space-around;
-    flex: 1;
-    flex-direction: row
-}
-
-.veggie, .protein, .carb {
-    padding: 0.8rem;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 3rem;
-    margin: .5rem 1rem;
-    width: 30vw;
-    color: #8C2F39;
-    background: #fff;
-    cursor: default;
-    transition: all 0.3s ease;
+header{
+    padding: 0 4rem;
 }
 
 
@@ -70,10 +14,27 @@
     text-align: center;
 /*    min-width: 100vw;*/
     height: auto;
-/*    flex-direction: row;*/
+    flex-direction: row;
 }
 
+.recipeButtons{
+    z-index: 2;
+    position: absolute;
+    top: 10vh;
+}
 
+.card{
+    visibility: collapse;
+}
+
+.fourthimg{
+    z-index: 0;
+    height: 100vh;
+    width: 25vw;
+    object-position: 0 0;
+    object-fit: cover;
+    image-resolution: snap;
+}
 
 /*GROCERY LIST*/
 
@@ -82,6 +43,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    
 }
 
 .grocery-list{
@@ -102,39 +64,24 @@
 
 
 
-@media screen and (max-width:900px){
+@media screen and (max-width:980px){
     body{
         overflow-x: hidden;
         font-size: 1.3rem;
     }
     
-    .threeMeal{
-/*        flex-direction: column;*/
-        font-size: 1.3rem;
-    }
-    
-    .partA, .partB, .partC, .partD, .partA .card img,.partB .card img, .partC .card img,.partD .card img, .partA .card,.partB .card, .partC .card,.partD .card {
-/*
-        height: auto;
-        min-width: 100vw;
-*/
-        font-size: 1.3rem;
-    }
-    
-    .partA .card img,.partB .card img, .partC .card img,.partD .card img{
-        padding: 0 15vw;
+    .fourthimg{
+        height: 40vh;
         width: 100vw;
+        object-position: 0 0;
+        object-fit: cover;
     }
     
-    .partA button,.partB button, .partC button,.partD button{
-        width: 70vw;
-        margin: 1vh 15vw;
+    .recipeButtons{
+        top: 0;
+        left: 50vw;
     }
-    
-     .partA .redoBreakfast, .partB .redoLunch, .partC .redoDinner, .partD .redoSweet {
-        width: 10vw;
-        margin: 1vh 15vw;
-    }
+
     
     .grocery-container{
         
