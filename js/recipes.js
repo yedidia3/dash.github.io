@@ -362,8 +362,18 @@ randomDessert(sweets);
 var groceryArray = [];
     
 function addToGroceryList(){
-    alert(groceryArray);
     
+//    var groceryCom = 
+    var items = document.querySelectorAll(".items");
+    
+    var groceries = document.querySelector(".grocery-list");
+    
+    alert(items);
+    console.log(items);
+    
+//    groceries.appendChild(items);
+    
+//    groceryArray.push(items);
     // add items on screen to the list
     
     
