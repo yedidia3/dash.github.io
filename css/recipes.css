@@ -23,6 +23,10 @@ header{
     top: 0vh;
 }
 
+button{
+    font-size: 2rem;
+}
+
 .card{
     border-style: none;
     border-color: transparent;
@@ -86,7 +90,7 @@ ul {
     
     .recipeButtons{
         top: 0;
-        left: 10vw;
+        right: 10vw;
     }
     
     .breakfast{

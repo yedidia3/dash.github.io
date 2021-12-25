@@ -1,12 +1,9 @@
 body{
-    padding: 2%;
+    padding: 1rem;
     background-color: #162944;
     color: #fff;
 }
 
-h1, h2, h3, h4{
-    color: #fff;
-}
 
 .numbers{
     font-size: 20px;
