@@ -157,8 +157,6 @@ var groceryDict = {
     //create ul in card to make grocery lists
     var ul = document.createElement("ul");
 
-//Toggle
-var toggle = document.querySelector(".toggle");
 
 
 

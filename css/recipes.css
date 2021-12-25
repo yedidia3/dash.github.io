@@ -1,7 +1,7 @@
 
 
-header{
-    padding: 0 4rem;
+h1, h2{
+    padding: 1rem 4rem;
 }
 
 
@@ -46,8 +46,10 @@ button{
 .grocery-container{
     display: flex;
     flex-direction: column;
+/*
     justify-content: center;
     text-align: center;
+*/
     
 }
 
@@ -80,7 +82,7 @@ ul {
     }
     
     .fourthimg{
-        height: 40vh;
+        height: 30vh;
         width: 100vw;
         object-position: 0 0;
         object-fit: cover;
