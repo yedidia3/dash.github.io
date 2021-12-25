@@ -58,7 +58,6 @@ header{
     color: black;
     display: flex;
     justify-content: space-between;
-    font-size: 1.5rem;
     transition: all 0.5s ease;
 }
 
@@ -66,9 +65,12 @@ header{
 
 
 @media screen and (max-width:980px){
+    *{
+        font-size: 1.4rem;
+    }
+    
     body{
         overflow-x: hidden;
-        font-size: 1.3rem;
     }
     
     .fourthimg{
@@ -81,10 +83,13 @@ header{
     
     .recipeButtons{
         top: 0;
-        left: 50vw;
+        left: 10vw;
+    }
+    
+    .breakfast{
+        width: 70vw;
     }
 
-    
     .grocery-container{
         
     }
