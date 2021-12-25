@@ -20,11 +20,12 @@ header{
 .recipeButtons{
     z-index: 2;
     position: absolute;
-    top: 10vh;
+    top: 0vh;
 }
 
 .card{
-    visibility: collapse;
+    border-style: none;
+    border-color: transparent;
 }
 
 .fourthimg{
@@ -75,6 +76,7 @@ header{
         width: 100vw;
         object-position: 0 0;
         object-fit: cover;
+        border-radius: 4rem;
     }
     
     .recipeButtons{

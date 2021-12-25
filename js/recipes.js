@@ -10,7 +10,7 @@ var lunch = ["Oyster Mushroom Maki Roll", "Black Bean Burger and Fries", "Tacos 
 
 var dinner = ["Garlic Tofu, Broccoli, Kabocha Squash", "Jerk Salmon, Mango Salsa, and Black Rice", "Dijon Crusted Salmon and Green Beans", "Japanese Curry Udon", "Burmese Tea Leaf Salad and Thai Green Curry Tofu", "Crispy Tofu, Cucumber and Edamame", "Miso Ramen", "Palak Paneer, Rice, and Chana Masala", "Congolese Pondu and Rice", "West Indian Curry & Naan", "Congolese Ginger Tilapia, Fufu, and Spinach", "Thanksgiving meal", "Sushi Bake", "Congolese Shrimp, Matembele, and Coco Ngalula's Eggs"];
 
-var sweets = ["Brownies", "Red Bean Buns", "", "Earl Grey Macarons", "Batida de Coco", "Galettes", "Peach Cobbler", "Green Tea Ice Cream", "Chocolate Lava Cake"];
+var sweets = ["Brownies", "Red Bean Buns", "Earl Grey Macarons", "Batida de Coco", "Galettes", "Peach Cobbler", "Green Tea Ice Cream", "Chocolate Lava Cake"];
 
 
 //RECIPES
@@ -213,11 +213,7 @@ function randomBreakfast(breakfast){
 
 randomBreakfast(breakfast);
 
-function showBreakfastDetails(breakfast){
-     
-    document.querySelectorAll(".card")[0].style.visibility = 'visible';
 
-}
 
     
 
