@@ -81,6 +81,7 @@ ul {
         object-position: 0 0;
         object-fit: cover;
         border-radius: 4rem;
+        padding: 1rem;
     }
     
     .recipeButtons{

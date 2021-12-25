@@ -120,10 +120,11 @@ label:active:after {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 907px) {
 
 	div#app {
-		width: 90%;
+		width: 90vw;
+        height: 100vh;
 	}
 
 	p#title {
